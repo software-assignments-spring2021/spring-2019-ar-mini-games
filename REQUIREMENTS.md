@@ -1,7 +1,7 @@
 # Project Requirements
 
 ## Operating System: 
-iOS/Android 
+- iOS/Android 
 
 ## Tech Stack:
 - Unity 
