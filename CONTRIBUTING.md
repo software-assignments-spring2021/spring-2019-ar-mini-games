@@ -80,6 +80,12 @@ Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.
 
+### Daily Standups
+Monday 12:30 group call.
+Tuesday after class in-person.
+Thursday after class in-person.
+Saturday afternoon in-person before team work session.
+
 ### Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
