@@ -58,6 +58,12 @@ that are not aligned to this Code of Conduct, or to ban temporarily or
 permanently any contributor for other behaviors that they deem inappropriate,
 threatening, offensive, or harmful.
 
+### Daily Standups
+- Monday 12:30PM group call.
+- Tuesday 1:45PM (after class) in-person.
+- Thursday 1:45PM (after class) in-person.
+- Saturday 1:00PM before in-person team work session.
+
 ### Scope
 
 This Code of Conduct applies both within project spaces and in public spaces
@@ -79,12 +85,6 @@ Further details of specific enforcement policies may be posted separately.
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.
-
-### Daily Standups
-Monday 12:30 group call.
-Tuesday after class in-person.
-Thursday after class in-person.
-Saturday afternoon in-person before team work session.
 
 ### Attribution
 
