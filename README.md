@@ -18,9 +18,9 @@ https://github.com/nyu-software-engineering/ar-mini-games.git
 
 {Antony's bio}
 
-[**Charles 'Charlie' Dickstein**](https://github.com/charleswdickstein) | NYU '??
+[**Charles Dickstein**](https://github.com/charleswdickstein) | NYU '19
 
-{Charlie's bio}
+Charles is a fourth-year Computer Science major at NYU. He's experienced in web, mobile, and game development. 
 
 [**Tavius Koktavy**](https://github.com/kotavy) | NYU '19
 
