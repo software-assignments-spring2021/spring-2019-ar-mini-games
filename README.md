@@ -14,9 +14,9 @@ https://github.com/nyu-software-engineering/ar-mini-games.git
 ```
 
 ## Developers
-[**Antony Sunwoo**](https://github.com/asunwoo98) | NYU '??
+[**Antony Sunwoo**](https://github.com/asunwoo98) | NYU '19
 
-{Antony's bio}
+Antony is a third-year Computer Science and Mathematics major at NYU. His main interest is artificial intelligence and software engineering.
 
 [**Charles Dickstein**](https://github.com/charleswdickstein) | NYU '19
 
