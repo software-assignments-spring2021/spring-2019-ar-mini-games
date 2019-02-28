@@ -8,7 +8,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 ## Contributing Process
 - Fork and clone the project.
 - Find an existing task in the current sprint, or pull one from sprint backlog. Make sure to assign yourself to the task!
-- Create a new branch for the issue with the following naming convention: `issue#/Description`. For example, the branch `10/GithubSetup` would address issue #10 about organizing the initial repository state.
+- Create a new branch for the issue with the following naming convention: `UserStory#/Issue#/Description`. For example, the branch `5/8/GithubSetup` would address User Story #5, for Issue #8 which is a task of #5, to organizing the initial repository state.
 - Create an empty commit, and push the branch to your fork.
 - Implement the changes you want on your fork. Make sure to follow coding conventions, provide comments, and write commit messages.
 - When you're done with your changes, update your fork and request a review on the pull request by @ mentioning a maintainer.
