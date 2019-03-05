@@ -12,6 +12,13 @@ We plan to have app store releases once we reach a stable build. In the meantime
 ```
 https://github.com/nyu-software-engineering/ar-mini-games.git
 ```
+## Unit Testing
+1. Download Unity 2018 
+2. Open the ar-mini-games project in Unity. 
+3. Navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
+4. From navigation bar, go to "General" > "Test Runner"
+5. "Test Runner" will open in a pane. Double click "Tests/UnitTests" to run tests  
+
 
 ## Developers
 [**Antony Sunwoo**](https://github.com/asunwoo98) | NYU '19
