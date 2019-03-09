@@ -13,8 +13,6 @@ public class ThrowDart : MonoBehaviour
         rb = this.GetComponent<Rigidbody>();
     }
 
-
-
     // Update is called once per frame
     void Update()
     {
@@ -23,13 +21,7 @@ public class ThrowDart : MonoBehaviour
             Debug.Log("pressed");
             rb.AddForce(transform.forward * thrust);
         }
-
-
-
-
-
     }
-
 
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
@@ -39,6 +31,7 @@ public class ThrowDart : MonoBehaviour
             Debug.Log("Hit DartBoard!");
 
             // make dart "stick" to board by turning off gravity, movement, rotation
+            rb.detectCollisions = false;
             rb.useGravity = false;
             rb.velocity = Vector3.zero;
             rb.freezeRotation = true;
@@ -46,16 +39,11 @@ public class ThrowDart : MonoBehaviour
             Invoke("DestroyDart", 2);
 
         } // end of if dartboard
-
     }
-
 
     void DestroyDart()
     {
-
-        Destroy(this.gameObject  );
-
-
+        Destroy(this.gameObject);
     }
 
 }
