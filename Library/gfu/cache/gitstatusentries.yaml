@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-12T08:20:17.467-04:00
-  initializedAtString: 2019-03-12T08:19:55.034-04:00
+  lastUpdatedAtString: 2019-03-12T10:36:41.866-04:00
+  initializedAtString: 2019-03-12T08:59:13.135-04:00
   entries:
   - path: .vs\ar-mini-games\v15\.suo
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\.vs\ar-mini-games\v15\.suo
@@ -40,423 +40,27 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: ar-mini-games.sln
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\ar-mini-games.sln
-    projectPath: ar-mini-games.sln
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assembly-CSharp.csproj
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assembly-CSharp-Editor.csproj
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assembly-CSharp-Editor.csproj
-    projectPath: Assembly-CSharp-Editor.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    status: 1
-    staged: 0
   - path: Assets\DartsGame.unity
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\DartsGame.unity
     projectPath: Assets\DartsGame.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\Plugins.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins.meta
-    projectPath: Assets\Plugins.meta
+  - path: Assets\Editor\UnitTests.cs
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Editor\UnitTests.cs
+    projectPath: Assets\Editor\UnitTests.cs
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: Assets\Plugins\GitHub.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub.meta
-    projectPath: Assets\Plugins\GitHub.meta
+  - path: Assets\Scripts\BoardController.cs
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Scripts\BoardController.cs
+    projectPath: Assets\Scripts\BoardController.cs
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor.meta
-    projectPath: Assets\Plugins\GitHub\Editor.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-    projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\big-logo@2x.png
-    projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-    projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\credits.txt
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\credits.txt
-    projectPath: Assets\Plugins\GitHub\Editor\credits.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\credits.txt.meta
-    projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\eula.txt
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\eula.txt
-    projectPath: Assets\Plugins\GitHub\Editor\eula.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\eula.txt.meta
-    projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.mdb.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.mdb.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
-    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.mdb.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\libsfw.bundle
-    projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-    projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\libsfw.so
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\libsfw.so
-    projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\libsfw.so.meta
-    projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-    projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-    projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-    projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-    projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\sfw.net.dll
-    projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\System.Threading.dll
-    projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x64.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x64.meta
-    projectPath: Assets\Plugins\GitHub\Editor\x64.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-    projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x86.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x86.meta
-    projectPath: Assets\Plugins\GitHub\Editor\x86.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\assetDatabase3
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\CurrentLayout.dwlt
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -466,489 +70,63 @@ MonoBehaviour:
     originalPath: 
     status: 1
     staged: 0
-  - path: Library\expandedItems
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\gfu\cache\branches.yaml
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitlog.yaml
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\gfu\cache\gituser.yaml
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\gituser.yaml
-    projectPath: Library\gfu\cache\gituser.yaml
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
+  - path: Library\metadata\00\00000000000000009000000000000000
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\00\00000000000000009000000000000000
+    projectPath: Library\metadata\00\00000000000000009000000000000000
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\00\00000000000000004000000000000000
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\00\00000000000000004000000000000000
-    projectPath: Library\metadata\00\00000000000000004000000000000000
+  - path: Library\metadata\00\0000000000000000a100000000000000
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\00\0000000000000000a100000000000000
+    projectPath: Library\metadata\00\0000000000000000a100000000000000
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
-    projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+  - path: Library\metadata\15\15247c51ba9ed44ce942258c0371cacc
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\15\15247c51ba9ed44ce942258c0371cacc
+    projectPath: Library\metadata\15\15247c51ba9ed44ce942258c0371cacc
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9.info
-    projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e
-    projectPath: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
-    projectPath: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\13\136dc24f151211d438acee17aff4e934
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\13\136dc24f151211d438acee17aff4e934
-    projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\13\136dc24f151211d438acee17aff4e934.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\13\136dc24f151211d438acee17aff4e934.info
-    projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\15\151a1d946b98deb4b98445400983ba92
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\15\151a1d946b98deb4b98445400983ba92
-    projectPath: Library\metadata\15\151a1d946b98deb4b98445400983ba92
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\15\151a1d946b98deb4b98445400983ba92.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\15\151a1d946b98deb4b98445400983ba92.info
-    projectPath: Library\metadata\15\151a1d946b98deb4b98445400983ba92.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
-    projectPath: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d.info
-    projectPath: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1
-    projectPath: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
-    projectPath: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
-    projectPath: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db.info
-    projectPath: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\23\23c8bee69b591054094d32918f98facd
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\23\23c8bee69b591054094d32918f98facd
-    projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\23\23c8bee69b591054094d32918f98facd.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
-    projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6
-    projectPath: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
-    projectPath: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\3e\3e7cbf3ba1d3fa740aeff50b292f419e
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\3e\3e7cbf3ba1d3fa740aeff50b292f419e
-    projectPath: Library\metadata\3e\3e7cbf3ba1d3fa740aeff50b292f419e
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\3e\3e7cbf3ba1d3fa740aeff50b292f419e.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\3e\3e7cbf3ba1d3fa740aeff50b292f419e.info
-    projectPath: Library\metadata\3e\3e7cbf3ba1d3fa740aeff50b292f419e.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
-    projectPath: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0.info
-    projectPath: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    projectPath: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5.info
-    projectPath: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\63\636d33ae594884e7d80b569f429d245d
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\63\636d33ae594884e7d80b569f429d245d
-    projectPath: Library\metadata\63\636d33ae594884e7d80b569f429d245d
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\63\636d33ae594884e7d80b569f429d245d.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\63\636d33ae594884e7d80b569f429d245d.info
-    projectPath: Library\metadata\63\636d33ae594884e7d80b569f429d245d.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4
-    projectPath: Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4.info
-    projectPath: Library\metadata\68\68c7e4565cde54155bb78d8e935f1dd4.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb
-    projectPath: Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb.info
-    projectPath: Library\metadata\68\68c7e4565cde54155bb78d8e935f1ddb.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\76\76bb1b11d9cc3c944b29444f8d93faed
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\76\76bb1b11d9cc3c944b29444f8d93faed
-    projectPath: Library\metadata\76\76bb1b11d9cc3c944b29444f8d93faed
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\76\76bb1b11d9cc3c944b29444f8d93faed.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\76\76bb1b11d9cc3c944b29444f8d93faed.info
-    projectPath: Library\metadata\76\76bb1b11d9cc3c944b29444f8d93faed.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
-    projectPath: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79.info
-    projectPath: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\86\863e1b9976c4e46d29bf83928b3a8ab2
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\86\863e1b9976c4e46d29bf83928b3a8ab2
-    projectPath: Library\metadata\86\863e1b9976c4e46d29bf83928b3a8ab2
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\86\863e1b9976c4e46d29bf83928b3a8ab2.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\86\863e1b9976c4e46d29bf83928b3a8ab2.info
-    projectPath: Library\metadata\86\863e1b9976c4e46d29bf83928b3a8ab2.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
-    projectPath: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8.info
-    projectPath: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\87\877ef3585573ce44eab899298be23158
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\87\877ef3585573ce44eab899298be23158
-    projectPath: Library\metadata\87\877ef3585573ce44eab899298be23158
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\87\877ef3585573ce44eab899298be23158.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\87\877ef3585573ce44eab899298be23158.info
-    projectPath: Library\metadata\87\877ef3585573ce44eab899298be23158.info
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\metadata\8c\8ce677866232c43b5892d707fd2b011c
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\8c\8ce677866232c43b5892d707fd2b011c
     projectPath: Library\metadata\8c\8ce677866232c43b5892d707fd2b011c
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
-    projectPath: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45.info
-    projectPath: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
-    projectPath: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13.info
-    projectPath: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
-    projectPath: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231.info
-    projectPath: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\c2\c2a85eb7fadf54f9ca5b01a6898cb922
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c2\c2a85eb7fadf54f9ca5b01a6898cb922
-    projectPath: Library\metadata\c2\c2a85eb7fadf54f9ca5b01a6898cb922
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
-    projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
-    projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab
-    projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab.info
-    projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ab.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
-    projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae.info
-    projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\ca\cad92998c5182496e8b989b406d9f156
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\ca\cad92998c5182496e8b989b406d9f156
-    projectPath: Library\metadata\ca\cad92998c5182496e8b989b406d9f156
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\ca\cad92998c5182496e8b989b406d9f156.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\ca\cad92998c5182496e8b989b406d9f156.info
-    projectPath: Library\metadata\ca\cad92998c5182496e8b989b406d9f156.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
-    projectPath: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132.info
-    projectPath: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8
-    projectPath: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
-    projectPath: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
-    projectPath: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606.info
-    projectPath: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
-    projectPath: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c.info
-    projectPath: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e
-    projectPath: Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e.info
-    projectPath: Library\metadata\f8\f81094832d834c64d93b198cb16b6a3e.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
-    projectPath: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6.info
-    projectPath: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
-    projectPath: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998.info
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998.info
-    projectPath: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\ProjectSettings.asset
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ProjectSettings.asset
-    projectPath: Library\ProjectSettings.asset
     originalPath: 
     status: 3
     staged: 0
@@ -970,23 +148,23 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor.pdb
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ScriptAssemblies\Assembly-CSharp-Editor.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.pdb
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ScriptAssemblies\BuiltinAssemblies.stamp
     projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
@@ -1018,59 +196,83 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptMapper
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ScriptMapper
-    projectPath: Library\ScriptMapper
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ShaderCache\1\1c209baf44edd79ee33d2d6e22e10c88.bin
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ShaderCache\1\1c209baf44edd79ee33d2d6e22e10c88.bin
-    projectPath: Library\ShaderCache\1\1c209baf44edd79ee33d2d6e22e10c88.bin
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\ShaderCache\6\6f328c757019a91903cfae9f638ad3f6.bin
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\ShaderCache\6\6f328c757019a91903cfae9f638ad3f6.bin
-    projectPath: Library\ShaderCache\6\6f328c757019a91903cfae9f638ad3f6.bin
-    originalPath: 
-    status: 1
-    staged: 0
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\StateCache\SceneView\f07551-mainStage.json
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\StateCache\SceneView\f07551-mainStage.json
-    projectPath: Library\StateCache\SceneView\f07551-mainStage.json
+  - path: Library\StateCache\Hierarchy\68fc14-mainStage.json
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Library\StateCache\Hierarchy\68fc14-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\68fc14-mainStage.json
     originalPath: 
     status: 3
     staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+    projectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.dll
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp.dll
+    projectPath: obj\Debug\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.pdb
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp.pdb
+    projectPath: obj\Debug\Assembly-CSharp.pdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\build.force
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\build.force
+    projectPath: obj\Debug\build.force
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
     status: 1
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: ProjectSettings\ProjectSettings.asset
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\ProjectSettings\ProjectSettings.asset
-    projectPath: ProjectSettings\ProjectSettings.asset
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\ProjectVersion.txt
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\ProjectSettings\ProjectVersion.txt
-    projectPath: ProjectSettings\ProjectVersion.txt
-    originalPath: 
-    status: 3
     staged: 0
   - path: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
     fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
@@ -1084,51 +286,177 @@ MonoBehaviour:
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-2137403d148be3f4f968b54479c8b961
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-2137403d148be3f4f968b54479c8b961
-    projectPath: Temp\UnityTempFile-2137403d148be3f4f968b54479c8b961
+  - path: Temp\UnityTempFile-03d8adc1d143ef9479abeb83974e9009
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-03d8adc1d143ef9479abeb83974e9009
+    projectPath: Temp\UnityTempFile-03d8adc1d143ef9479abeb83974e9009
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-5896d3d7b63bc414184a1b74f61fb21c
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-5896d3d7b63bc414184a1b74f61fb21c
-    projectPath: Temp\UnityTempFile-5896d3d7b63bc414184a1b74f61fb21c
+  - path: Temp\UnityTempFile-03d9303cb9933054eab40f9378a674b9
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-03d9303cb9933054eab40f9378a674b9
+    projectPath: Temp\UnityTempFile-03d9303cb9933054eab40f9378a674b9
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-6f70e58f78de1954b9d10d683abfdeba
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-6f70e58f78de1954b9d10d683abfdeba
-    projectPath: Temp\UnityTempFile-6f70e58f78de1954b9d10d683abfdeba
+  - path: Temp\UnityTempFile-231a04d68b7c7034fb37b25662d2ec31
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-231a04d68b7c7034fb37b25662d2ec31
+    projectPath: Temp\UnityTempFile-231a04d68b7c7034fb37b25662d2ec31
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-868f4e7c0c7340441963ddc630395960
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-868f4e7c0c7340441963ddc630395960
-    projectPath: Temp\UnityTempFile-868f4e7c0c7340441963ddc630395960
+  - path: Temp\UnityTempFile-2ac0be1784a9cb44d96a004aaf341395
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-2ac0be1784a9cb44d96a004aaf341395
+    projectPath: Temp\UnityTempFile-2ac0be1784a9cb44d96a004aaf341395
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-94e27b0fc53f75f40a136d4cd0b1ef92
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-94e27b0fc53f75f40a136d4cd0b1ef92
-    projectPath: Temp\UnityTempFile-94e27b0fc53f75f40a136d4cd0b1ef92
+  - path: Temp\UnityTempFile-2ad4610fc8970b7419bcec22225117d5
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-2ad4610fc8970b7419bcec22225117d5
+    projectPath: Temp\UnityTempFile-2ad4610fc8970b7419bcec22225117d5
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-98405516f246fdf4c8b598178c7cc852
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-98405516f246fdf4c8b598178c7cc852
-    projectPath: Temp\UnityTempFile-98405516f246fdf4c8b598178c7cc852
+  - path: Temp\UnityTempFile-2ddb9426c544d6441a80808dd967e5cf
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-2ddb9426c544d6441a80808dd967e5cf
+    projectPath: Temp\UnityTempFile-2ddb9426c544d6441a80808dd967e5cf
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-bc8d61041fabd5e428efc42f98ebde1f
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-bc8d61041fabd5e428efc42f98ebde1f
-    projectPath: Temp\UnityTempFile-bc8d61041fabd5e428efc42f98ebde1f
+  - path: Temp\UnityTempFile-3bae0915866efb448aa88355747281a4
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-3bae0915866efb448aa88355747281a4
+    projectPath: Temp\UnityTempFile-3bae0915866efb448aa88355747281a4
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-c15b78dfa7ed41347b0ab99a10ffede7
-    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-c15b78dfa7ed41347b0ab99a10ffede7
-    projectPath: Temp\UnityTempFile-c15b78dfa7ed41347b0ab99a10ffede7
+  - path: Temp\UnityTempFile-4772916abc1609f4c9239c7e15cdaf3c
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-4772916abc1609f4c9239c7e15cdaf3c
+    projectPath: Temp\UnityTempFile-4772916abc1609f4c9239c7e15cdaf3c
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-4790b99f7c0f33842a95cf464e304ad2
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-4790b99f7c0f33842a95cf464e304ad2
+    projectPath: Temp\UnityTempFile-4790b99f7c0f33842a95cf464e304ad2
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-52bb1ef29f0c0cf40b75942eb80f8a91
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-52bb1ef29f0c0cf40b75942eb80f8a91
+    projectPath: Temp\UnityTempFile-52bb1ef29f0c0cf40b75942eb80f8a91
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-5eed839c3890437408c0e1ef689e8542
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-5eed839c3890437408c0e1ef689e8542
+    projectPath: Temp\UnityTempFile-5eed839c3890437408c0e1ef689e8542
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-7a6ce4b3b37963744b79548898a810f9
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-7a6ce4b3b37963744b79548898a810f9
+    projectPath: Temp\UnityTempFile-7a6ce4b3b37963744b79548898a810f9
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-7d0f29a95b95e1c43972dd37a8efe25a
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-7d0f29a95b95e1c43972dd37a8efe25a
+    projectPath: Temp\UnityTempFile-7d0f29a95b95e1c43972dd37a8efe25a
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-8391a5be3159bbf4cb4dbe180ac08d9a
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-8391a5be3159bbf4cb4dbe180ac08d9a
+    projectPath: Temp\UnityTempFile-8391a5be3159bbf4cb4dbe180ac08d9a
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-9c0b911ac501f124dbb1e104a167cc17
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-9c0b911ac501f124dbb1e104a167cc17
+    projectPath: Temp\UnityTempFile-9c0b911ac501f124dbb1e104a167cc17
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-b4fb4ab258c684a44944401e9437c7db
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-b4fb4ab258c684a44944401e9437c7db
+    projectPath: Temp\UnityTempFile-b4fb4ab258c684a44944401e9437c7db
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-baedde6d4b43dd141a689c4a0ac1887b
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-baedde6d4b43dd141a689c4a0ac1887b
+    projectPath: Temp\UnityTempFile-baedde6d4b43dd141a689c4a0ac1887b
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-c99cbf75f3e3bb74ba710df9e9a00a00
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-c99cbf75f3e3bb74ba710df9e9a00a00
+    projectPath: Temp\UnityTempFile-c99cbf75f3e3bb74ba710df9e9a00a00
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-cc00f4acbb67c1646b67f2dbeece6fc5
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-cc00f4acbb67c1646b67f2dbeece6fc5
+    projectPath: Temp\UnityTempFile-cc00f4acbb67c1646b67f2dbeece6fc5
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-d1ba8611fa611674fb7f293b299afc92
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-d1ba8611fa611674fb7f293b299afc92
+    projectPath: Temp\UnityTempFile-d1ba8611fa611674fb7f293b299afc92
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-d79a44f66a12ff24fa05f59214603d09
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-d79a44f66a12ff24fa05f59214603d09
+    projectPath: Temp\UnityTempFile-d79a44f66a12ff24fa05f59214603d09
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-d7dbf7112a40e7342a1e17e79f0ca2b8
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-d7dbf7112a40e7342a1e17e79f0ca2b8
+    projectPath: Temp\UnityTempFile-d7dbf7112a40e7342a1e17e79f0ca2b8
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-db3685278ab89ae4a94b41d1ff5642ec
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-db3685278ab89ae4a94b41d1ff5642ec
+    projectPath: Temp\UnityTempFile-db3685278ab89ae4a94b41d1ff5642ec
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-dde96933f5bf93243b581a69896673f5
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-dde96933f5bf93243b581a69896673f5
+    projectPath: Temp\UnityTempFile-dde96933f5bf93243b581a69896673f5
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-e4c3bbacea670b748b29847c1b407781
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-e4c3bbacea670b748b29847c1b407781
+    projectPath: Temp\UnityTempFile-e4c3bbacea670b748b29847c1b407781
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-e8a0b817eeca41642be060427c8f3b78
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-e8a0b817eeca41642be060427c8f3b78
+    projectPath: Temp\UnityTempFile-e8a0b817eeca41642be060427c8f3b78
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-ea13093f90afc6f48b8a8378105f2f18
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-ea13093f90afc6f48b8a8378105f2f18
+    projectPath: Temp\UnityTempFile-ea13093f90afc6f48b8a8378105f2f18
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-ea23856567b6ab34da132237fea4b562
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-ea23856567b6ab34da132237fea4b562
+    projectPath: Temp\UnityTempFile-ea23856567b6ab34da132237fea4b562
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Temp\UnityTempFile-eac1e8f9e066f974fbffa137d15bb415
+    fullPath: C:\Users\Tavius\Desktop\Code\GitHub Repo'd Projects\ar-mini-games\Temp\UnityTempFile-eac1e8f9e066f974fbffa137d15bb415
+    projectPath: Temp\UnityTempFile-eac1e8f9e066f974fbffa137d15bb415
     originalPath: 
     status: 1
     staged: 0

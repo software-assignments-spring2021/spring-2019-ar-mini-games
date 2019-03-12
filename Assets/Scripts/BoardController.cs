@@ -21,13 +21,16 @@ public class BoardController : MonoBehaviour
     }
 
     public void UpdateScore(int newPoints)
-    {
-        if ((Score += newPoints) > HighScore)
+    {   
+        if (newPoints >= 0)
         {
-            HighScore = Score;
-            UpdateHighScoreText();
+            if ((Score += newPoints) > HighScore)
+            {
+                HighScore = Score;
+                UpdateHighScoreText();
+            }
+            UpdateScoreText();
         }
-        UpdateScoreText();
     }
 
     private void UpdateScoreText()
