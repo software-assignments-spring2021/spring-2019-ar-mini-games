@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 2
+  lastUpdatedAtString: 2019-03-12T08:18:21.716-04:00
+  initializedAtString: 2019-03-12T07:06:00.116-04:00
+  localBranches:
+  - name: master
+    tracking: origin/master
+  - name: 4/60/MakeSimpleDartboard
+    tracking: 
+  - name: 5/76/ScoreTiers
+    tracking: 
+  - name: 73/78/TaviusUnitTests
+    tracking: 
+  remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/instantiate-dart
+    tracking: '[None]'
+  - name: origin/master
+    tracking: '[None]'
+  - name: origin/4/60/MakeSimpleDartboard
+    tracking: '[None]'
+  - name: origin/5/76/ScoreTiers
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/nyu-software-engineering/ar-mini-games.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  localConfigBranches:
+    keys:
+    - master
+    - 4/60/MakeSimpleDartboard
+    - 5/76/ScoreTiers
+    - 73/78/TaviusUnitTests
+    values:
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/nyu-software-engineering/ar-mini-games.git
+      trackingBranch: master
+    - name: 4/60/MakeSimpleDartboard
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: 5/76/ScoreTiers
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: 73/78/TaviusUnitTests
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+  remoteConfigBranches:
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - HEAD
+      - instantiate-dart
+      - master
+      - 4/60/MakeSimpleDartboard
+      - 5/76/ScoreTiers
+    subKeyValues:
+    - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/nyu-software-engineering/ar-mini-games.git
+        trackingBranch: 
+      - name: instantiate-dart
+        remote:
+          name: origin
+          url: https://github.com/nyu-software-engineering/ar-mini-games.git
+        trackingBranch: 
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/nyu-software-engineering/ar-mini-games.git
+        trackingBranch: 
+      - name: 4/60/MakeSimpleDartboard
+        remote:
+          name: origin
+          url: https://github.com/nyu-software-engineering/ar-mini-games.git
+        trackingBranch: 
+      - name: 5/76/ScoreTiers
+        remote:
+          name: origin
+          url: https://github.com/nyu-software-engineering/ar-mini-games.git
+        trackingBranch: 
+  configRemotes:
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/nyu-software-engineering/ar-mini-games.git
