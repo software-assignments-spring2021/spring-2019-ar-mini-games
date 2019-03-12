@@ -59,7 +59,7 @@ permanently any contributor for other behaviors that they deem inappropriate,
 threatening, offensive, or harmful.
 
 ### Daily Standups
-- Monday 12:30PM group call.
+- Monday remote asynchronous standup.
 - Tuesday 1:45PM (after class) in-person.
 - Thursday 1:45PM (after class) in-person.
 - Saturday 1:00PM before in-person team work session.
