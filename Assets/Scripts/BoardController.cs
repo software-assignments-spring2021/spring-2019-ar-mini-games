@@ -22,20 +22,24 @@ public class BoardController : MonoBehaviour
 
     public void UpdateScore(int newPoints)
     {
-        Debug.Log(newPoints);
-        Score += newPoints;
-
-        if (Score > HighScore)
+        if ((Score += newPoints) > HighScore)
         {
             HighScore = Score;
+            UpdateHighScoreText();
         }
-        showText();
+        UpdateScoreText();
     }
 
-    private void showText ()
+    private void UpdateScoreText()
     {
         scoreText.text = "Score: " + Score.ToString();
+    }
+
+    private void UpdateHighScoreText()
+    {
         highScoreText.text = "High Score: " + HighScore.ToString();
     }
 }
+
+
 
