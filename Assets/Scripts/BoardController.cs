@@ -10,29 +10,32 @@ public class BoardController : MonoBehaviour
     public Text scoreText;
     public Text highScoreText;
 
-    // Start is called before the first frame update
+    // Get/Set for private vars:
+    public int Score { get => score; set => score = value; }
+    public int HighScore { get => highScore; set => highScore = value; }
+
     void Start()
     {
-        score = 0;
-        highScore = 0;
+        Score = 0;
+        HighScore = 0;
     }
 
     public void UpdateScore(int newPoints)
     {
         Debug.Log(newPoints);
-        score += newPoints;
+        Score += newPoints;
 
-        if (score > highScore)
+        if (Score > HighScore)
         {
-            highScore = score;
+            HighScore = Score;
         }
         showText();
     }
 
     private void showText ()
     {
-        scoreText.text = "Score: " + score.ToString();
-        highScoreText.text = "High Score: " + highScore.ToString();
+        scoreText.text = "Score: " + Score.ToString();
+        highScoreText.text = "High Score: " + HighScore.ToString();
     }
 }
 
