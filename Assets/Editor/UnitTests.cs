@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
@@ -19,11 +19,10 @@ namespace Tests
             // Assert that "Score" exists and it is initially 0
             Text scoreText = GameObject.Find("Score").GetComponent<Text>();
             Assert.IsTrue(scoreText.text == "Score: 0");
-
-
-
         }
 
+        
+        
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
