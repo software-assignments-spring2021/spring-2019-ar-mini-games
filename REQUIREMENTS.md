@@ -6,8 +6,8 @@
 
 ## Tech Stack:
 - Unity 2018.3.5
-- ![ARCore SDK](https://github.com/google-ar/arcore-unity-sdk)
-- ![ARKit Plugin for Unity](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin)
+- [ARCore SDK](https://github.com/google-ar/arcore-unity-sdk)
+- [ARKit Plugin for Unity](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin)
 - 
 
 ## UML Diagrams:
