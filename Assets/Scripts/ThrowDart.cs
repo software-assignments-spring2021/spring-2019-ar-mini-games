@@ -52,8 +52,8 @@ public class ThrowDart : MonoBehaviour
 
     void DestroyDart()
     {
-
-        Destroy(this.gameObject  );
+        Instantiate(this.gameObject, new Vector3(0, 0.25f, -4f), Quaternion.identity);
+        Destroy(this.gameObject);
 
 
     }

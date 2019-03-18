@@ -6,7 +6,9 @@
 
 ## Tech Stack:
 - Unity 2018.3.5
-- ARCore SDK
+- [ARCore SDK](https://github.com/google-ar/arcore-unity-sdk)
+- [ARKit Plugin for Unity](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin)
+- [AR SetUp Guide](https://developers.google.com/ar/develop/unity/quickstart-ios)
 
 ## UML Diagrams:
 #### Darts

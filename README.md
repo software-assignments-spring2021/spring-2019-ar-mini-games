@@ -13,14 +13,13 @@ We plan to have app store releases once we reach a stable build. In the meantime
 https://github.com/nyu-software-engineering/ar-mini-games.git
 ```
 ## Building and Testing The Project
-1. Download Unity 2018 
+1. Download Unity 2018.3.6f1 (later versions should be compatible, but this is our development Unity build) 
 2. Open the ar-mini-games project in Unity by navigating to the "Assets" folder from root directory.
 3. Open DartsGame.Unity
 4. Press the "Play" Button to launch the game. And The "Pause" Button to Stop
 5. Navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
-6. From navigation bar, go to "General" > "Test Runner"
-7. "Test Runner" will open in a pane. Double click "Tests/UnitTests" to run tests  
-
+6. From navigation bar, under the "Window" tab select "General" > "Test Runner"
+7. "Test Runner" will open in a new pane. Select the "EditMode" tab, then click "Run All" to run tests  
 
 ## Developers
 [**Antony Sunwoo**](https://github.com/asunwoo98) | NYU '19
