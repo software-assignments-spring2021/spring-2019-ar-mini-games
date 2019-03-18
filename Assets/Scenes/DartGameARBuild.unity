@@ -147,26 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ClearMaterial: {fileID: 2100000, guid: 2081057c5ab9b4b20a1a1c4efdace299, type: 2}
-  _videoTextureY: {fileID: 0}
-  _videoTextureCbCr: {fileID: 0}
-  _displayTransform:
-    e00: 0
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 0
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 0
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 0
-  bCommandBufferInitialized: 0
 --- !u!4 &9
 Transform:
   m_ObjectHideFlags: 0
@@ -262,9 +242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce437cef046e841aabd6070890e79d41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachedCamera: {fileID: 0}
-  currentNearZ: 0
-  currentFarZ: 0
 --- !u!1 &16
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5587c957048494a2f96db36e0995449e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  l: {fileID: 0}
 --- !u!4 &20
 Transform:
   m_ObjectHideFlags: 0
@@ -637,7 +613,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 10}
-  savedClearMaterial: {fileID: 0}
 --- !u!23 &732268494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1025,6 +1000,7 @@ MonoBehaviour:
   m_HitTransform: {fileID: 1286139108}
   maxRayDistance: 30
   collisionLayer:
+    serializedVersion: 2
     m_Bits: 1024
 --- !u!1 &1056786559
 GameObject:
@@ -1076,7 +1052,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2081057c5ab9b4b20a1a1c4efdace299, type: 2}
+  - {fileID: 2100000, guid: 8fb6930dea41e41fe8df26905b78d705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1111,7 +1087,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056786559}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.1, z: 1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
@@ -1241,7 +1217,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 10}
-  savedClearMaterial: {fileID: 0}
   startAlignment: 0
   planeDetection: 3
   getPointCloud: 1
@@ -1251,7 +1226,6 @@ MonoBehaviour:
   detectionImages: {fileID: 0}
   maximumNumberOfTrackedImages: 0
   detectionObjects: {fileID: 0}
-  sessionStarted: 0
 --- !u!4 &1121666033
 Transform:
   m_ObjectHideFlags: 0
@@ -1295,12 +1269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4977b930c0f8843c8b8a101ba5bf3c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runOptions: 00000000000000000000000000000000
-  alignmentOptions: 000000000000000000000000
-  planeOptions: 00000000000000000000000000000000
-  currentOptionIndex: 0
-  currentAlignmentIndex: 0
-  currentPlaneIndex: 0
 --- !u!4 &1153389250
 Transform:
   m_ObjectHideFlags: 0
@@ -1685,7 +1653,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8fb6930dea41e41fe8df26905b78d705, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1824,8 +1792,6 @@ MonoBehaviour:
   numPointsToShow: 400
   PointCloudPrefab: {fileID: 1845574417345784, guid: 02d2a544d8d594d30b790e76398d0873,
     type: 3}
-  pointCloudObjects: []
-  m_PointCloudData: []
 --- !u!4 &2101518926
 Transform:
   m_ObjectHideFlags: 0

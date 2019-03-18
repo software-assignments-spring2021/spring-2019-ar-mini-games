@@ -52,7 +52,11 @@ public class ThrowDart : MonoBehaviour
 
     void DestroyDart()
     {
-        Instantiate(this.gameObject, new Vector3(0, 0.25f, -4f), Quaternion.identity);
+        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f,0.8f)); 
+       
+        GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
+        dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
+
         Destroy(this.gameObject);
 
 
