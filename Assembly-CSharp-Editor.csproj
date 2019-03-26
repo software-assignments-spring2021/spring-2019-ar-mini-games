@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\UnitTests.cs" />
+    <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Editor\BoxSliderEditor.cs" />
+    <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
