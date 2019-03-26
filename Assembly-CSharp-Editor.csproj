@@ -60,9 +60,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\ARCoreIOSSupportHelper.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\ARCoreIOSSupportPreprocessBuild.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\ARCoreProjectSettingsWindow.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\ARCoreSupportedPreprocessBuild.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\AssetHelper.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabaseContextMenu.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabaseInspector.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabasePreprocessBuild.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\BackgroundJobExecutor.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\CloudAnchorPreprocessBuild.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\ExampleBuildHelper.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\ExamplePreprocessBuild.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\PreprocessBuildBase.cs" />
+    <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\Editor\RequiredOptionalPreprocessBuild.cs" />
     <Compile Include="Assets\Editor\UnitTests.cs" />
+    <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\Editor\PointcloudVisualizerEditor.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Examples\UnityParticlePainter\HSVPicker\Editor\BoxSliderEditor.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Editor\UnityARBuildPostprocessor.cs" />
+    <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.95.0.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Tavius/Code/GitHub/ar-mini-games/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -323,6 +340,18 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.95.0">
+      <HintPath>C:/Users/Tavius/Code/GitHub/ar-mini-games/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.95.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.95.0">
+      <HintPath>C:/Users/Tavius/Code/GitHub/ar-mini-games/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.95.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>C:/Users/Tavius/Code/GitHub/ar-mini-games/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.95.0">
+      <HintPath>C:/Users/Tavius/Code/GitHub/ar-mini-games/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.95.0.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Tavius/Code/GitHub/ar-mini-games/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
