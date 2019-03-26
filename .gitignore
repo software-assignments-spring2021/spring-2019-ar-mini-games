@@ -25,6 +25,8 @@
 ExportedObj/
 .consulo/
 *.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
 *.unityproj
 *.sln
 *.suo
