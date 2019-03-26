@@ -61,7 +61,7 @@ public class ThrowDart : MonoBehaviour
        
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
-        dartCpy.GetComponent<Rigidbody>().useGravity = true;
+
 
         Destroy(this.gameObject);
 
