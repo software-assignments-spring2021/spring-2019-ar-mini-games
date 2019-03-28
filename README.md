@@ -28,7 +28,7 @@ Antony is a third-year Computer Science and Mathematics major at NYU. His main i
 
 [**Charles Dickstein**](https://github.com/charleswdickstein) | NYU '19
 
-Charles is a fourth-year Computer Science major at NYU. He's experienced in web, mobile, and game development. 
+Charles is a fourth-year Computer Science major at NYU. He's experienced in web, mobile, and game development. He is passionate about augmented reality development and sushi. 
 
 [**Tavius Koktavy**](https://github.com/kotavy) | NYU '19
 
