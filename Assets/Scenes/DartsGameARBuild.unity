@@ -616,7 +616,7 @@ PrefabInstance:
     - target: {fileID: 3117456758087124734, guid: a7d35b737f7c23a4daada8f4cf4982d2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.68
+      value: 4.003
       objectReference: {fileID: 0}
     - target: {fileID: 3117456758087124734, guid: a7d35b737f7c23a4daada8f4cf4982d2,
         type: 3}
@@ -1561,6 +1561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 1000
+  DartPrefab: {fileID: 0}
 --- !u!65 &1473902833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1808,7 +1809,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 721928787}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1742071815
+--- !u!114 &1742071819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2104,5 +2105,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7268304441605834528, guid: 1be531c2bc721364687e81b5504c43fd,
+        type: 3}
+      propertyPath: DartPrefab
+      value: 
+      objectReference: {fileID: 7268304441605834558, guid: 1be531c2bc721364687e81b5504c43fd,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1be531c2bc721364687e81b5504c43fd, type: 3}
