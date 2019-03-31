@@ -29,7 +29,7 @@ public class BoardController : MonoBehaviour
             score = score + 1;
             if (score > highScore)
             {
-                highScore = score;
+                highScore = score;               
             }
             showText();
         }

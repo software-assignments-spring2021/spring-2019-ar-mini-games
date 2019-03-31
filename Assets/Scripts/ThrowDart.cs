@@ -23,6 +23,9 @@ public class ThrowDart : MonoBehaviour
             Debug.Log("pressed");
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
+            this.gameObject.transform.parent = null;
+
+
             Invoke("DestroyDart", 3);
         }
 
