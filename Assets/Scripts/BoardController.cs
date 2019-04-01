@@ -9,6 +9,7 @@ public class BoardController : MonoBehaviour
     private int highScore;
     public Text scoreText;
     public Text highScoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,23 +17,16 @@ public class BoardController : MonoBehaviour
         highScore = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateScore(int newPoints)
     {
-    }
+        Debug.Log(newPoints);
+        score += newPoints;
 
-    void OnCollisionEnter(Collision collision)
-    {
-
-        if(collision.gameObject.CompareTag("Dart"))
+        if (score > highScore)
         {
-            score = score + 1;
-            if (score > highScore)
-            {
-                highScore = score;
-            }
-            showText();
+            highScore = score;
         }
+        showText();
     }
 
     private void showText ()
