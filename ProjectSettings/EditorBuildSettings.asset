@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/DartGameARBuild.unity
+    path: Assets/Scenes/SceneDartGameARBuild.unity
     guid: 93d442a78d5cf4b6883c0c75a699648b
   - enabled: 1
     path: Assets/Scenes/DartsGameARBuild.unity

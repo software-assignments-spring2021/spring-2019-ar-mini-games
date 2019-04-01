@@ -24,7 +24,16 @@ public class BoardController : MonoBehaviour
 
         if (score > highScore)
         {
+<<<<<<< HEAD:Assets/Scripts/BoardController.cs
             highScore = score;
+=======
+            score = score + 1;
+            if (score > highScore)
+            {
+                highScore = score;               
+            }
+            showText();
+>>>>>>> master:Assets/BoardController.cs
         }
         showText();
     }
