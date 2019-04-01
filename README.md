@@ -18,7 +18,7 @@ https://github.com/nyu-software-engineering/ar-mini-games.git
 3. Open DartsGame.Unity
 4. Press the "Play" Button to launch the game. And The "Pause" Button to Stop
 5. Navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
-6. From navigation bar, under the "Window" tab select "General" > "Test Runner"
+6. From navigation bar, under the "Window" > "General" > "Test Runner"
 7. "Test Runner" will open in a new pane. Select the "EditMode" tab, then click "Run All" to run tests  
 
 ## Developers
