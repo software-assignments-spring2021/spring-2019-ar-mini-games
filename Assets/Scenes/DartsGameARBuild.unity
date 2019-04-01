@@ -1443,6 +1443,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 1052679871}
+  - {fileID: 1568586998}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1561,7 +1562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 1000
-  DartPrefab: {fileID: 0}
 --- !u!65 &1473902833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1711,8 +1711,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563586579}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Assets/Scenes/DartsGameARBuild.unity
-=======
 --- !u!1 &1568586993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +1835,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
->>>>>>> master:Assets/Scenes/DartsGameARBuild.unity
 --- !u!1 &1584894085
 GameObject:
   m_ObjectHideFlags: 0
