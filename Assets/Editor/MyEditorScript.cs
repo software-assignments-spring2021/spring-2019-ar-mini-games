@@ -36,6 +36,7 @@ public class MyEditorScript : MonoBehaviour
            
 
         string res = BuildPipeline.BuildPlayer(scenes, target_dir, build_target, build_options).ToString();
+        Debug.Log("PRINT TEST: LOOK FOR ME IN JENKINS");
 
         }
 
