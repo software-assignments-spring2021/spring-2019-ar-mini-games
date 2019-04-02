@@ -245,6 +245,7 @@
     <Compile Include="Assets\Scripts\BoardController.cs" />
     <Compile Include="Assets\Scripts\NonARCameraControl.cs" />
     <Compile Include="Assets\Scripts\PointsAssigner.cs" />
+    <Compile Include="Assets\Scripts\RestartScene.cs" />
     <Compile Include="Assets\Scripts\ScoreTracker.cs" />
     <Compile Include="Assets\Scripts\ThrowDart.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
@@ -364,6 +365,7 @@
     <None Include="Assets\unity-arkit-plugin\TUTORIAL.txt" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
     <None Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Examples\Common\Shaders\MobileOcclusion.shader" />
+    <None Include="Assets\GoogleARCore\Resources\RuntimeSettings\CloudServicesApiKey.txt" />
     <None Include="Assets\unity-arkit-plugin\SCENES.txt" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\ARKitRemote\ARKITREMOTE.txt" />

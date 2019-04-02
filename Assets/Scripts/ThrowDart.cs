@@ -6,6 +6,7 @@ public class ThrowDart : MonoBehaviour
 {
     private Rigidbody rb;
     public int thrust;
+    private int dartCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +45,7 @@ public class ThrowDart : MonoBehaviour
 
     void DestroyDart()
     {
-        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f,0.8f)); 
+        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.45f,0.8f)); 
        
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
