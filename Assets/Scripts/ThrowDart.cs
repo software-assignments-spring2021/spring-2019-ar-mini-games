@@ -6,7 +6,6 @@ public class ThrowDart : MonoBehaviour
 {
     private Rigidbody rb;
     public int thrust;
-    private int dartCounter = 0;
 
     // Start is called before the first frame update
     void Start()
