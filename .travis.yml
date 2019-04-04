@@ -1,0 +1,22 @@
+os: osx
+
+env:
+- TRAVIS_TAG="Deploy-2018.3.6f1" PROJECT_NAME="AR-Mini-Games" UNITY_PROJECT_PATH="Assets" DEPLOY_UNITYPACKAGE="path set in deploy script"
+
+cache:
+  directories:
+    - $UNITY_DOWNLOAD_CACHE
+    
+before_install:
+- chmod a+x ./travis-build/*.sh
+
+install:
+- cat /etc/hosts
+- ./travis-build/install-unity.sh
+
+script:
+- ./travis-build/build.sh
+- ./travis-build/run-tests.sh
+
+notifications:
+  slack: nyu-agile-software:qsoK3tRtazvn3jlDnkv2LHO8
