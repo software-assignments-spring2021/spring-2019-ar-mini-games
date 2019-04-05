@@ -197,7 +197,6 @@
     <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\ARPlugin\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
-    <Compile Include="Assets\BoardController.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceMeshFilter.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceRig.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\AugmentedFacesExampleController.cs" />
@@ -243,7 +242,9 @@
     <Compile Include="Assets\GoogleARCore\Examples\ObjectManipulation\Scripts\Manipulators\SelectionManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ObjectManipulation\Scripts\Manipulators\TranslationManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ObjectManipulation\Scripts\ObjectManipulationController.cs" />
-    <Compile Include="Assets\NonARCameraControl.cs" />
+    <Compile Include="Assets\Scripts\BoardController.cs" />
+    <Compile Include="Assets\Scripts\NonARCameraControl.cs" />
+    <Compile Include="Assets\Scripts\PointsAssigner.cs" />
     <Compile Include="Assets\Scripts\ScoreTracker.cs" />
     <Compile Include="Assets\Scripts\ThrowDart.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
