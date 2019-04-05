@@ -21,12 +21,16 @@ public class BoardController : MonoBehaviour
     {
         Debug.Log(newPoints);
         score += newPoints;
-        score = score + 1;
+
         if (score > highScore)
         {
 
-
-            highScore = score; 
+            score = score + 1;
+            if (score > highScore)
+            {
+                highScore = score;               
+            }
+            showText();
         }
         showText();
     }
