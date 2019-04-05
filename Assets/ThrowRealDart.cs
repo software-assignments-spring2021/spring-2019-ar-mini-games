@@ -63,6 +63,7 @@ public class ThrowRealDart : MonoBehaviour
     {
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
+
         dartCountScript.dartCounter -= 1;
 
         if (dartCountScript.dartCounter <= 0)
@@ -70,6 +71,9 @@ public class ThrowRealDart : MonoBehaviour
 
             gameOver = true;
         }
+       
+         updateDartImages(dartCountScript.dartCounter);
+        
 
     }
 
@@ -79,6 +83,13 @@ public class ThrowRealDart : MonoBehaviour
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         return dartCountScript.dartCounter;
 
+
+    }
+
+    public void updateDartImages(int counter){
+        GameObject dartImgNum = GameObject.Find("DartImg" + counter);
+        dartImgNum.SetActive(false);
+                                          
 
     }
 

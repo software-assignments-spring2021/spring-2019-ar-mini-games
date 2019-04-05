@@ -19,6 +19,7 @@ public class ThrowDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // click screen to throw dart
         if (Input.GetMouseButtonDown(0) && !gameOver)
         {
             {

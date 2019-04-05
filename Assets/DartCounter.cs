@@ -19,8 +19,16 @@ public class DartCounter : MonoBehaviour
            
             gameOverPanel.SetActive(true);
         }
+
+
+
+
+
+
         
     }
+
+
 
 
 }

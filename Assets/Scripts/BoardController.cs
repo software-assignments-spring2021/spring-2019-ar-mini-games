@@ -19,7 +19,6 @@ public class BoardController : MonoBehaviour
 
     public void UpdateScore(int newPoints)
     {
-        Debug.Log(newPoints);
         score += newPoints;
 
         if (score > highScore)
