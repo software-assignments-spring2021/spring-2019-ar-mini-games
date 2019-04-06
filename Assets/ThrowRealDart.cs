@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ThrowRealDart : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class ThrowRealDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !gameOver)
+        if (Input.GetMouseButtonDown(0) && !gameOver && !EventSystem.current.IsPointerOverGameObject())
         {
             Debug.Log("pressed");
            
@@ -92,6 +93,8 @@ public class ThrowRealDart : MonoBehaviour
                                           
 
     }
+
+
 
 
 
