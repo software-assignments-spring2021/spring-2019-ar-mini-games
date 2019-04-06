@@ -19,14 +19,17 @@ public class BoardController : MonoBehaviour
 
     public void UpdateScore(int newPoints)
     {
-        Debug.Log(newPoints);
         score += newPoints;
-        score = score + 1;
+
         if (score > highScore)
         {
 
-
-            highScore = score; 
+            score = score + 1;
+            if (score > highScore)
+            {
+                highScore = score;               
+            }
+            showText();
         }
         showText();
     }
