@@ -30,9 +30,9 @@ public class AdjustBoard : MonoBehaviour
     // Update is called once per frame
     void MakeBoardChildOfCamera(GameObject board)
     {
-        board.transform.position = new Vector3(0, 0, 5f);
         GameObject mainCameraObj = GameObject.Find("Main Camera");
         board.transform.parent = mainCameraObj.transform;
+        board.transform.position = new Vector3(0, 0, 5f);
         GameObject.Find("AdjustBoardButton").GetComponentInChildren<Text>().text = "Place Board";
     }
 
