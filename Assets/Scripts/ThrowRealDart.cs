@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ThrowRealDart : MonoBehaviour
 {
@@ -17,9 +18,14 @@ public class ThrowRealDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !gameOver)
+        if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("pressed");
+            if (EventSystem.current.IsPointerOverGameObject() ||
+                EventSystem.current.currentSelectedGameObject != null)
+            {
+                return;
+            }
            
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
@@ -49,11 +55,11 @@ public class ThrowRealDart : MonoBehaviour
 
     void DestroyDart()
     {
-        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f)); 
-       
-        GameObject dartCpy = Instantiate(this.gameObject, p, this.gameObject.transform.rotation);
-        dartCpy.transform.rotation = this.gameObject.transform.rotation;
-        dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
+        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
+
+        GameObject MainCamera = GameObject.FindWithTag("MainCamera");
+        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
+        dartCpy.transform.parent = MainCamera.transform;
         dartCpy.GetComponent<BoxCollider>().enabled = true;
 
         Destroy(this.gameObject);
@@ -92,6 +98,8 @@ public class ThrowRealDart : MonoBehaviour
                                           
 
     }
+
+
 
 
 
