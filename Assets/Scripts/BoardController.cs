@@ -14,30 +14,38 @@ public class BoardController : MonoBehaviour
     void Start()
     {
         score = 0;
-        highScore = 0;
+        loadHighscore();
+        showText();
     }
 
     public void UpdateScore(int newPoints)
     {
+        Debug.Log(newPoints);
         score += newPoints;
 
         if (score > highScore)
         {
-
-            score = score + 1;
-            if (score > highScore)
-            {
-                highScore = score;               
-            }
-            showText();
+            highScore = score;
+            saveHighscore();
         }
         showText();
     }
 
-    private void showText ()
+    private void showText()
     {
         scoreText.text = "Score: " + score.ToString();
         highScoreText.text = "High Score: " + highScore.ToString();
+    }
+
+    void saveHighscore()
+    {
+        PlayerPrefs.SetInt("highscore", highScore);
+    }
+
+    //initialize the high score
+    void loadHighscore()
+    {
+        highScore = PlayerPrefs.GetInt("highscore");
     }
 }
 

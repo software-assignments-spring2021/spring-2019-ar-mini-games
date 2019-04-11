@@ -242,11 +242,15 @@
     <Compile Include="Assets\GoogleARCore\Examples\ObjectManipulation\Scripts\Manipulators\SelectionManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ObjectManipulation\Scripts\Manipulators\TranslationManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\ObjectManipulation\Scripts\ObjectManipulationController.cs" />
+    <Compile Include="Assets\Scripts\AdjustBoard.cs" />
     <Compile Include="Assets\Scripts\BoardController.cs" />
+    <Compile Include="Assets\Scripts\DartCounter.cs" />
     <Compile Include="Assets\Scripts\NonARCameraControl.cs" />
     <Compile Include="Assets\Scripts\PointsAssigner.cs" />
+    <Compile Include="Assets\Scripts\RestartScene.cs" />
     <Compile Include="Assets\Scripts\ScoreTracker.cs" />
     <Compile Include="Assets\Scripts\ThrowDart.cs" />
+    <Compile Include="Assets\Scripts\ThrowRealDart.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\ARKitRemote\ARKitFaceTrackingRemoteConnection.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\ARKitRemote\ARKitRemoteConnection.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\ARKitRemote\CompressionHelper.cs" />
@@ -358,6 +362,7 @@
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\NativeInterface\UnityARSessionNativeInterface.cs" />
     <Compile Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\UnityARKitPluginSettings.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
+    <None Include="Assets\GoogleARCore\Resources\RuntimeSettings\CloudServicesApiKey.txt" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
     <None Include="Assets\unity-arkit-plugin\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\ARPlugin\GoogleARCore\SDK\Materials\ARBackground.shader" />
@@ -374,19 +379,19 @@
     <None Include="Assets\unity-arkit-plugin\Assets\UnityARKitPlugin\Plugins\iOS\UnityARKit\Shaders\YUVShader.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -587,13 +592,13 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/charlesdickstein/Desktop/devops-mini-games/ar-mini-games/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/antonysunwoo/ar-mini-games/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
