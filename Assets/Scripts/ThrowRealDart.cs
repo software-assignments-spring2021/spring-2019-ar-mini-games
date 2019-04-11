@@ -18,9 +18,14 @@ public class ThrowRealDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !gameOver && !EventSystem.current.IsPointerOverGameObject())
+        if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("pressed");
+            if (EventSystem.current.IsPointerOverGameObject() ||
+                EventSystem.current.currentSelectedGameObject != null)
+            {
+                return;
+            }
            
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
