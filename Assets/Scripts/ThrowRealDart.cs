@@ -36,9 +36,6 @@ public class ThrowRealDart : MonoBehaviour
             updateDartCounter();
             Invoke("DestroyDart", 3);
         }
-
-       
-
     }
     
     // detect objects the dart collides with
@@ -81,8 +78,6 @@ public class ThrowRealDart : MonoBehaviour
         }
        
          updateDartImages(dartCountScript.dartCounter);
-        
-
     }
 
     public int getDartCounter()
@@ -90,19 +85,10 @@ public class ThrowRealDart : MonoBehaviour
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         return dartCountScript.dartCounter;
-
-
     }
 
     public void updateDartImages(int counter){
         GameObject dartImgNum = GameObject.Find("DartImg" + counter);
         dartImgNum.SetActive(false);
-                                          
-
     }
-
-
-
-
-
 }

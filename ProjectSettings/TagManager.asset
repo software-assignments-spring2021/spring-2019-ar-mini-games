@@ -9,6 +9,8 @@ TagManager:
   - Dart
   - DartHolder
   - GameOverPanel
+  - AppleCameraParent
+  - AndroidCameraParent
   layers:
   - Default
   - TransparentFX
