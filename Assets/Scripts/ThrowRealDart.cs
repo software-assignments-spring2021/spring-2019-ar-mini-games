@@ -46,7 +46,7 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (col.gameObject.tag == "DartBoard")
         {
-            
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
             // Turn off collider and stop dart
             rb.velocity = Vector3.zero;
             // make dart "stick" to board by turning off gravity, movement, rotation
