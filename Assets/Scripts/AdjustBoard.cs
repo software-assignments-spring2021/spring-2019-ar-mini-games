@@ -7,6 +7,7 @@ public class AdjustBoard : MonoBehaviour
 {
     // Start is called before the first frame update
     bool didPress;
+    public int DistanceToCamera;
 
     private void Start()
     {
@@ -32,7 +33,11 @@ public class AdjustBoard : MonoBehaviour
     {
         GameObject mainCameraObj = GameObject.Find("Main Camera");
         board.transform.parent = mainCameraObj.transform;
-        board.transform.position = new Vector3(0, 0, 5f);
+        
+        Vector3 p = mainCameraObj.transform.forward * DistanceToCamera + mainCameraObj.transform.position;
+        board.transform.position = p;
+        var fwd = Camera.main.transform.forward;
+        board.transform.rotation = Quaternion.LookRotation(-Camera.main.transform.up, -Camera.main.transform.forward);
         GameObject.Find("AdjustBoardButton").GetComponentInChildren<Text>().text = "Place Board";
     }
 

@@ -7,7 +7,8 @@ public class ThrowRealDart : MonoBehaviour
 {
     private Rigidbody rb;
     public int thrust;
-    public bool gameOver = false; 
+    public bool gameOver = false;
+    bool fired = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,9 @@ public class ThrowRealDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !fired)
         {
+            fired = true;
             Debug.Log("pressed");
             if (EventSystem.current.IsPointerOverGameObject() ||
                 EventSystem.current.currentSelectedGameObject != null)
@@ -44,8 +46,8 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (col.gameObject.tag == "DartBoard")
         {
+            
             // Turn off collider and stop dart
-            gameObject.GetComponent<BoxCollider>().enabled = false;
             rb.velocity = Vector3.zero;
             // make dart "stick" to board by turning off gravity, movement, rotation
             rb.useGravity = false;
