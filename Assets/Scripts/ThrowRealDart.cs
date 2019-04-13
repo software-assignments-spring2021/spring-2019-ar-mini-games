@@ -21,14 +21,16 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !fired)
         {
-            fired = true;
+           
             Debug.Log("pressed");
             if (EventSystem.current.IsPointerOverGameObject() ||
                 EventSystem.current.currentSelectedGameObject != null)
             {
+               
                 return;
             }
            
+            fired = true;
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
             this.gameObject.transform.parent = null;
