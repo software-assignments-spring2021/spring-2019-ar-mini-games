@@ -42,8 +42,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678eb1650d66d4fe3a48dff71f75a04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 500
+  thrust: 1000
   gameOver: 0
+  dart: {fileID: 2166889817129824841}
 --- !u!1001 &2166889817129792745
 PrefabInstance:
   m_ObjectHideFlags: 0
