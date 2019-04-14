@@ -10,7 +10,6 @@ public class ThrowRealDart : MonoBehaviour
     public bool gameOver = false;
     public GameObject dart;
     bool fired = false;
-    bool scored = false;
 
     void Start()
     {
@@ -43,17 +42,11 @@ public class ThrowRealDart : MonoBehaviour
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "DartBoard" && !scored)
+        if (col.gameObject.tag == "DartBoard")
         {
-            scored = true;
-            // Turn off collider to avoid duplicate scoring:
-            //this.gameObject.GetComponent<MeshCollider>().enabled = false;
-            // Make dart "stick" to board by turning off gravity, movement, rotation:
-            rb.velocity = Vector3.zero;
+            // Darts are frozen here, and tag is changed in collision detection of PointsAssigner.cs
             rb.constraints = RigidbodyConstraints.FreezeAll;
-            // Re-enable collider for collisions with other darts:
-            //rb.isKinematic = true;
-        } // End of if DartBoard
+        }
     }
 
     void DestroyDart()
@@ -65,6 +58,8 @@ public class ThrowRealDart : MonoBehaviour
         newDart.transform.parent = MainCamera.transform;
         newDart.GetComponent<Rigidbody>().useGravity = false;
         newDart.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
+        newDart.gameObject.tag = "Dart";
 
         // Commented out to keep darts on board:
         //Destroy(this.gameObject);

@@ -1551,6 +1551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DartVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Dart
+      objectReference: {fileID: 0}
     - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2914,7 +2919,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2166889817129824841}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 51045a04222935445a1bfd5048a94741, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2927,7 +2932,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2166889817129824841}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 51045a04222935445a1bfd5048a94741, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
