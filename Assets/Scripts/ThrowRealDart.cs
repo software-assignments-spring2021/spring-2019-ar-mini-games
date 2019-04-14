@@ -10,7 +10,6 @@ public class ThrowRealDart : MonoBehaviour
     public bool gameOver = false;
     bool fired = false; 
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -19,17 +18,17 @@ public class ThrowRealDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check that the screen is pressed and we are not currently firing:
         if (Input.GetMouseButtonDown(0) && !fired)
         {
-           
-            Debug.Log("pressed");
+            // Shortcircuit to check for adjusting the board??
             if (EventSystem.current.IsPointerOverGameObject() ||
                 EventSystem.current.currentSelectedGameObject != null)
             {
-               
                 return;
             }
            
+            // Fire the dart by enabling gravity, sending it forward, and de-parenting it from the camera:
             fired = true;
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
@@ -38,9 +37,6 @@ public class ThrowRealDart : MonoBehaviour
             updateDartCounter();
             Invoke("DestroyDart", 3);
         }
-
-       
-
     }
     
     // detect objects the dart collides with
@@ -48,7 +44,7 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (col.gameObject.tag == "DartBoard")
         {
-            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            this.gameObject.GetComponent<MeshCollider>().enabled = false;
             // Turn off collider and stop dart
             rb.velocity = Vector3.zero;
             // make dart "stick" to board by turning off gravity, movement, rotation
@@ -64,7 +60,8 @@ public class ThrowRealDart : MonoBehaviour
         GameObject MainCamera = GameObject.FindWithTag("MainCamera");
         GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
         dartCpy.transform.parent = MainCamera.transform;
-        dartCpy.GetComponent<BoxCollider>().enabled = true;
+        dartCpy.GetComponent<Rigidbody>().useGravity = false;
+        dartCpy.GetComponent<MeshCollider>().enabled = true;
 
         Destroy(this.gameObject);
     }
@@ -78,13 +75,9 @@ public class ThrowRealDart : MonoBehaviour
 
         if (dartCountScript.dartCounter <= 0)
         {
-
             gameOver = true;
         }
-       
-         updateDartImages(dartCountScript.dartCounter);
-        
-
+        updateDartImages(dartCountScript.dartCounter);
     }
 
     public int getDartCounter()
@@ -92,19 +85,10 @@ public class ThrowRealDart : MonoBehaviour
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         return dartCountScript.dartCounter;
-
-
     }
 
     public void updateDartImages(int counter){
         GameObject dartImgNum = GameObject.Find("DartImg" + counter);
         dartImgNum.SetActive(false);
-                                          
-
     }
-
-
-
-
-
 }
