@@ -63,7 +63,8 @@ public class ThrowRealDart : MonoBehaviour
         dartCpy.GetComponent<Rigidbody>().useGravity = false;
         dartCpy.GetComponent<MeshCollider>().enabled = true;
 
-        Destroy(this.gameObject);
+        // Commented out to keep darts on board:
+        //Destroy(this.gameObject);
     }
 
     public void updateDartCounter()
