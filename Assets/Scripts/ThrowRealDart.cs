@@ -50,37 +50,10 @@ public class ThrowRealDart : MonoBehaviour
             //this.gameObject.GetComponent<MeshCollider>().enabled = false;
             // Make dart "stick" to board by turning off gravity, movement, rotation:
             rb.velocity = Vector3.zero;
-            rb.useGravity = false;
-            rb.freezeRotation = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
             // Re-enable collider for collisions with other darts:
             //rb.isKinematic = true;
         } // End of if DartBoard
-        if (col.gameObject.tag == "Dart")
-        {
-            //Debug.Log("Dart on dart");
-            Rigidbody colRb = col.gameObject.GetComponent<Rigidbody>();
-            colRb.velocity = Vector3.zero;
-        } // End of if Dart
-    }
-
-    private void OnCollisionStay(Collision col)
-    {
-        if (col.gameObject.tag == "Dart")
-        {
-            Debug.Log("Dart on dart");
-            Rigidbody colRb = col.gameObject.GetComponent<Rigidbody>();
-            colRb.velocity = Vector3.zero;
-        }
-    }
-
-    private void OnCollisionExit(Collision col)
-    {
-        if (col.gameObject.tag == "Dart")
-        {
-            Debug.Log("Dart on dart");
-            Rigidbody colRb = col.gameObject.GetComponent<Rigidbody>();
-            colRb.velocity = Vector3.zero;
-        }
     }
 
     void DestroyDart()
@@ -91,7 +64,7 @@ public class ThrowRealDart : MonoBehaviour
         GameObject newDart = Instantiate(dart, p, MainCamera.transform.rotation);
         newDart.transform.parent = MainCamera.transform;
         newDart.GetComponent<Rigidbody>().useGravity = false;
-        newDart.GetComponent<MeshCollider>().enabled = true;
+        newDart.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 
         // Commented out to keep darts on board:
         //Destroy(this.gameObject);

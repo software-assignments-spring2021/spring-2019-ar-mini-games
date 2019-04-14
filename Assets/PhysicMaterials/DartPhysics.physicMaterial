@@ -7,8 +7,8 @@ PhysicMaterial:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DartPhysics
-  dynamicFriction: 2
-  staticFriction: 2
-  bounciness: 0.65
-  frictionCombine: 3
+  dynamicFriction: 1
+  staticFriction: 1
+  bounciness: 0.05
+  frictionCombine: 0
   bounceCombine: 0
