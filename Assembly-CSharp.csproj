@@ -246,6 +246,7 @@
     <Compile Include="Assets\Scripts\BoardController.cs" />
     <Compile Include="Assets\Scripts\DartCounter.cs" />
     <Compile Include="Assets\Scripts\NonARCameraControl.cs" />
+    <Compile Include="Assets\Scripts\PlayOnClick.cs" />
     <Compile Include="Assets\Scripts\PointsAssigner.cs" />
     <Compile Include="Assets\Scripts\RestartScene.cs" />
     <Compile Include="Assets\Scripts\ScoreTracker.cs" />
