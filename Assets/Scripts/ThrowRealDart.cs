@@ -76,7 +76,7 @@ public class ThrowRealDart : MonoBehaviour
         {
             gameOver = true;
         }
-        updateDartImages(dartCountScript.dartCounter);
+         updateDartImages(dartCountScript.dartCounter);
     }
 
     public int getDartCounter()
