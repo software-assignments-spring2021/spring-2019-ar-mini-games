@@ -13,6 +13,7 @@ public class ThrowDart : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -26,9 +27,15 @@ public class ThrowDart : MonoBehaviour
                 rb.useGravity = true;
                 rb.AddForce(transform.forward * thrust);
                 this.gameObject.transform.parent = null;
+
+
                 Invoke("DestroyDart", 3);
             }
+
         }
+
+
+
     }
     
     // detect objects the dart collides with
@@ -53,6 +60,8 @@ public class ThrowDart : MonoBehaviour
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
         dartCpy.GetComponent<BoxCollider>().enabled = true;
+       
+
         Destroy(this.gameObject);
     }
 
@@ -62,13 +71,19 @@ public class ThrowDart : MonoBehaviour
         dartCountScript.dartCounter -= 1;
 
         if (dartCountScript.dartCounter <= 0){
+
             gameOver = true; 
         }
+        
     }
 
     public int getDartCounter(){
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         return dartCountScript.dartCounter;
+
+
     }
+
+   
 }
