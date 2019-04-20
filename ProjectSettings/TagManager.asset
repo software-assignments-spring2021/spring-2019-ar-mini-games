@@ -9,6 +9,7 @@ TagManager:
   - Dart
   - DartHolder
   - GameOverPanel
+  - InactiveDart
   - AppleCameraParent
   - AndroidCameraParent
   layers:

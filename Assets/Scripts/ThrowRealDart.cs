@@ -8,9 +8,9 @@ public class ThrowRealDart : MonoBehaviour
     private Rigidbody rb;
     public int thrust;
     public bool gameOver = false;
-    bool fired = false; 
+    public GameObject dart;
+    bool fired = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -19,22 +19,21 @@ public class ThrowRealDart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check that the screen is pressed and we are not currently firing:
         if (Input.GetMouseButtonDown(0) && !fired)
         {
-           
-            Debug.Log("pressed");
+            // Shortcircuit to check for adjusting the board??
             if (EventSystem.current.IsPointerOverGameObject() ||
                 EventSystem.current.currentSelectedGameObject != null)
             {
-               
                 return;
             }
            
+            // Fire the dart by enabling gravity, sending it forward, and de-parenting it from the camera:
             fired = true;
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
             this.gameObject.transform.parent = null;
-
             updateDartCounter();
             Invoke("DestroyDart", 3);
         }
@@ -45,13 +44,9 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (col.gameObject.tag == "DartBoard")
         {
-            this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            // Turn off collider and stop dart
-            rb.velocity = Vector3.zero;
-            // make dart "stick" to board by turning off gravity, movement, rotation
-            rb.useGravity = false;
-            rb.freezeRotation = true;
-        } // end of if dartboard
+            // Darts are frozen here, and tag is changed in collision detection of PointsAssigner.cs
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
     }
 
     void DestroyDart()
@@ -59,11 +54,15 @@ public class ThrowRealDart : MonoBehaviour
         Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
 
         GameObject MainCamera = GameObject.FindWithTag("MainCamera");
-        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
-        dartCpy.transform.parent = MainCamera.transform;
-        dartCpy.GetComponent<BoxCollider>().enabled = true;
+        GameObject newDart = Instantiate(dart, p, MainCamera.transform.rotation);
+        newDart.transform.parent = MainCamera.transform;
+        newDart.GetComponent<Rigidbody>().useGravity = false;
+        newDart.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
+        newDart.gameObject.tag = "Dart";
 
-        Destroy(this.gameObject);
+        // Commented out to keep darts on board:
+        //Destroy(this.gameObject);
     }
 
     public void updateDartCounter()
@@ -75,10 +74,8 @@ public class ThrowRealDart : MonoBehaviour
 
         if (dartCountScript.dartCounter <= 0)
         {
-
             gameOver = true;
         }
-       
          updateDartImages(dartCountScript.dartCounter);
     }
 

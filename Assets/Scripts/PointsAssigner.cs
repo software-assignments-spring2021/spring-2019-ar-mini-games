@@ -10,6 +10,8 @@ public class PointsAssigner : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Dart"))
         {
+            Debug.Log(collision.gameObject.name + " hit " + this.gameObject.name);
+            collision.gameObject.tag = "InactiveDart";
             this.gameObject.GetComponentInParent<BoardController>().UpdateScore(pointsValue);
         }
     }
