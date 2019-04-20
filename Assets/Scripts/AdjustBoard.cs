@@ -15,21 +15,23 @@ public class AdjustBoard : MonoBehaviour
     }
 
     public void AdjustBoardMain(){
+        
         GameObject board = GameObject.Find("BasicBoard");
-        if (didPress == false)
-        {
+        if (didPress == false){
+            
             MakeBoardChildOfCamera(board);
         }
-        else
-        {
+        else{
             DeparentBoard(board);
         }
         didPress = !didPress;
-    }
 
+   
+    }
+    // Update is called once per frame
     void MakeBoardChildOfCamera(GameObject board)
     {
-        GameObject mainCameraObj = GameObject.FindGameObjectWithTag("MainCamera");
+        GameObject mainCameraObj = GameObject.Find("Main Camera");
         board.transform.parent = mainCameraObj.transform;
         
         Vector3 p = mainCameraObj.transform.forward * DistanceToCamera + mainCameraObj.transform.position;
@@ -39,9 +41,13 @@ public class AdjustBoard : MonoBehaviour
         GameObject.Find("AdjustBoardButton").GetComponentInChildren<Text>().text = "Place Board";
     }
 
-    void DeparentBoard(GameObject board)
-    {   
+    void DeparentBoard(GameObject board){
+       
         board.transform.parent = null;
         GameObject.Find("AdjustBoardButton").GetComponentInChildren<Text>().text = "Adjust Board";
     }
+
+   
+
+
 }
