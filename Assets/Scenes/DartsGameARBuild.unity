@@ -2083,6 +2083,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 1000
   gameOver: 0
+--- !u!114 &1334826081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334826078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7dc5cfab03b4e15a809420d8a2c1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1357397783
 GameObject:
   m_ObjectHideFlags: 0

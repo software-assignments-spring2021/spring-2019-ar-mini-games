@@ -43,7 +43,8 @@ public class ThrowRealDart : MonoBehaviour
 
     }
     
-    // detect objects the dart collides with
+    // Observes objects the dart collides with
+    // ObserverPattern
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "DartBoard")
