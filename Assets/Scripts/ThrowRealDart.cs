@@ -56,13 +56,7 @@ public class ThrowRealDart : MonoBehaviour
 
     void DestroyDart()
     {
-        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
-
-        GameObject MainCamera = GameObject.FindWithTag("MainCamera");
-        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
-        dartCpy.transform.parent = MainCamera.transform;
-        dartCpy.GetComponent<BoxCollider>().enabled = true;
-
+        getNewDart();
         Destroy(this.gameObject);
     }
 
@@ -92,5 +86,16 @@ public class ThrowRealDart : MonoBehaviour
     public void updateDartImages(int counter){
         GameObject dartImgNum = GameObject.Find("DartImg" + counter);
         dartImgNum.SetActive(false);
+    }
+
+    public GameObject getNewDart()
+    {
+        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
+        GameObject MainCamera = GameObject.FindWithTag("MainCamera");
+        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
+        dartCpy.transform.parent = MainCamera.transform;
+        dartCpy.GetComponent<BoxCollider>().enabled = true;
+
+        return dartCpy;
     }
 }
