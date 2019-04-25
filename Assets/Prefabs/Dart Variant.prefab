@@ -29,6 +29,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0011578695, y: 0.0011578695, z: 0.0064797397}
   m_Center: {x: 0, y: 0, z: 0.0032398703}
+--- !u!114 &9066591847632188545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2166889817129824841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d9dd10d95e3ee43824d5b85727e02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MassCenter: {x: 0, y: 0, z: 0.321}
 --- !u!1001 &2166889817129792745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48,10 +61,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Dart
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: b4ce0f166e3134a528dd07e84647c4db, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e86a91271b70b45e789b0874c94d619f, type: 2}
     - target: {fileID: 400000, guid: b4ce0f166e3134a528dd07e84647c4db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.032
@@ -108,6 +117,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: b4ce0f166e3134a528dd07e84647c4db, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e86a91271b70b45e789b0874c94d619f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4ce0f166e3134a528dd07e84647c4db, type: 3}
 --- !u!1 &2166889817129824841 stripped
