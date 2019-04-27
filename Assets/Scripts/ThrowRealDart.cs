@@ -86,6 +86,10 @@ public class ThrowRealDart : MonoBehaviour
         GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
         dartCpy.transform.parent = MainCamera.transform;
         dartCpy.GetComponent<BoxCollider>().enabled = true;
+        dartCpy.GetComponent<Rigidbody>().useGravity = false;
+        dartCpy.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
+        dartCpy.gameObject.tag = "Dart";
 
         return dartCpy;
     }
