@@ -36,7 +36,7 @@ public class ThrowRealDart : MonoBehaviour
             this.gameObject.transform.parent = null;
 
             updateDartCounter();
-            Invoke("DestroyDart", 3);
+            Invoke("getNewDart", 3);
         }
     }
     
@@ -45,19 +45,10 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (col.gameObject.tag == "DartBoard")
         {
+            // Darts are frozen here, and tag is changed in collision detection of PointsAssigner.cs
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            // Turn off collider and stop dart
-            rb.velocity = Vector3.zero;
-            // make dart "stick" to board by turning off gravity, movement, rotation
-            rb.useGravity = false;
-            rb.freezeRotation = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
         } // end of if dartboard
-    }
-
-    void DestroyDart()
-    {
-        getNewDart();
-        Destroy(this.gameObject);
     }
 
     public void updateDartCounter()
