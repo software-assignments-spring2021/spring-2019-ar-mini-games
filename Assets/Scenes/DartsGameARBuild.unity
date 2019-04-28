@@ -1870,32 +1870,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1334826078 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1717974543}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1334826079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
     type: 3}
   m_PrefabInstance: {fileID: 1717974543}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1334826080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334826078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 678eb1650d66d4fe3a48dff71f75a04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1000
-  gameOver: 0
 --- !u!1 &1357397783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +2003,7 @@ PrefabInstance:
     - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
         type: 3}
@@ -2580,26 +2560,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960385521}
   m_CullTransparentMesh: 0
---- !u!1 &1981130529 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1473902829}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1981130531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1981130529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 678eb1650d66d4fe3a48dff71f75a04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 1000
-  gameOver: 0
 --- !u!1 &2030713892
 GameObject:
   m_ObjectHideFlags: 0

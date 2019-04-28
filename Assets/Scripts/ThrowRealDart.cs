@@ -21,12 +21,9 @@ public class ThrowRealDart : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !fired)
         {
-           
-            Debug.Log("pressed");
-            if (EventSystem.current.IsPointerOverGameObject() ||
+                if (EventSystem.current.IsPointerOverGameObject() ||
                 EventSystem.current.currentSelectedGameObject != null)
             {
-               
                 return;
             }
            
@@ -49,6 +46,10 @@ public class ThrowRealDart : MonoBehaviour
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
             rb.constraints = RigidbodyConstraints.FreezeAll;
         } // end of if dartboard
+        if (col.gameObject.tag == "InactiveDart")
+        {
+            rb.AddForce(transform.forward * -5);
+        } // end of if dartboard
     }
 
     public void updateDartCounter()
@@ -63,7 +64,6 @@ public class ThrowRealDart : MonoBehaviour
 
             gameOver = true;
         }
-       
          updateDartImages(dartCountScript.dartCounter);
     }
 
