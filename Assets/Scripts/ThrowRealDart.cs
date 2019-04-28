@@ -8,7 +8,8 @@ public class ThrowRealDart : MonoBehaviour
     private Rigidbody rb;
     public int thrust;
     public bool gameOver = false;
-    bool fired = false; 
+    bool fired = false;
+    bool hitDart = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class ThrowRealDart : MonoBehaviour
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "DartBoard")
+        if (col.gameObject.tag == "DartBoard" && !hitDart)
         {
             // Darts are frozen here, and tag is changed in collision detection of PointsAssigner.cs
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
@@ -48,6 +49,8 @@ public class ThrowRealDart : MonoBehaviour
         } // end of if dartboard
         if (col.gameObject.tag == "InactiveDart")
         {
+            hitDart = true;
+            gameObject.tag = "InactiveDart"; // Deactivate the dart from scoring
             rb.AddForce(transform.forward * -5);
         } // end of if dartboard
     }
