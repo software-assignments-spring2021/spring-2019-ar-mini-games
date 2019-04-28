@@ -40,13 +40,13 @@ public class BoardController : MonoBehaviour
         highScoreText.text = "High Score: " + highScore.ToString();
     }
 
-    void saveHighscore()
+    private void saveHighscore()
     {
         PlayerPrefs.SetInt("highscore", highScore);
     }
 
     //initialize the high score
-    void loadHighscore()
+    private void loadHighscore()
     {
         highScore = PlayerPrefs.GetInt("highscore");
     }

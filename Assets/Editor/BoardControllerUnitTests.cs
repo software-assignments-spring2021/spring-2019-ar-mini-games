@@ -11,7 +11,7 @@ namespace Tests
         {
             // Assert that a dartboard, dart, score, and highscore exist in the scene:
             Assert.NotNull(GameObject.FindGameObjectsWithTag("DartBoard"));
-            Assert.NotNull(GameObject.Find("Dart"));
+            Assert.NotNull(GameObject.FindGameObjectsWithTag("Dart"));
             Assert.NotNull(GameObject.Find("Score"));
             Assert.NotNull(GameObject.Find("HighScore"));
         }
@@ -44,26 +44,7 @@ namespace Tests
             Test.GetComponent<BoardController>().UpdateScore(newPoints);
 
             // Assert
-            Assert.AreEqual(expectedScore, Test.GetComponent<BoardController>().scoreText);
-        }
-
-        [Test]
-        public void BoardController_UpdateScores_IgnoreNegatives()
-        {
-            // Arrange
-            int initialScore = 0;
-            int newPoints = -100;
-            int expectedScore = initialScore + newPoints;
-            GameObject Test = new GameObject();
-            Test.AddComponent<BoardController>();
-            Test.GetComponent<BoardController>().scoreText = GameObject.Find("Score").GetComponent<Text>();
-            Test.GetComponent<BoardController>().highScoreText = GameObject.Find("HighScore").GetComponent<Text>();
-
-            // Act
-            Test.GetComponent<BoardController>().UpdateScore(newPoints);
-
-            // Assert
-            Assert.AreNotEqual(expectedScore, Test.GetComponent<BoardController>().Score);
+            Assert.AreEqual(expectedScore, Test.GetComponent<BoardController>().Score);
         }
 
         [Test]
@@ -71,18 +52,21 @@ namespace Tests
         {
             // Arrange
             int initialScore = 0;
-            int newPoints = -100;
+            int newPoints = 10;
             int expectedScore = initialScore + newPoints;
             GameObject Test = new GameObject();
             Test.AddComponent<BoardController>();
             Test.GetComponent<BoardController>().scoreText = GameObject.Find("Score").GetComponent<Text>();
             Test.GetComponent<BoardController>().highScoreText = GameObject.Find("HighScore").GetComponent<Text>();
 
+            // Assert
+            Assert.AreEqual(initialScore, Test.GetComponent<BoardController>().HighScore);
+
             // Act
             Test.GetComponent<BoardController>().UpdateScore(newPoints);
 
             // Assert
-            Assert.AreNotEqual(expectedScore, Test.GetComponent<BoardController>().Score);
+            Assert.AreEqual(expectedScore, Test.GetComponent<BoardController>().HighScore);
         }
 
         [Test]
