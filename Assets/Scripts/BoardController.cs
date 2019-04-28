@@ -10,6 +10,9 @@ public class BoardController : MonoBehaviour
     public Text scoreText;
     public Text highScoreText;
 
+    public int Score { get => score; }
+    public int HighScore { get => highScore; }
+
     // Start is called before the first frame update
     void Start()
     {
