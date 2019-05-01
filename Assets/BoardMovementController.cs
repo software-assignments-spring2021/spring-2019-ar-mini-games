@@ -27,11 +27,11 @@ public class BoardMovementController : MonoBehaviour
     void Update()
     {
         // for game testing only
-        if (Input.GetMouseButtonUp(0))
-        {
-            isHit = isHit * -1;
-            Debug.Log("yo " + isHit);
-        }
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    isHit = isHit * -1;
+        //    Debug.Log("yo " + isHit);
+        //}
         // end of for game testing only
 
         if (isHit == 1)
