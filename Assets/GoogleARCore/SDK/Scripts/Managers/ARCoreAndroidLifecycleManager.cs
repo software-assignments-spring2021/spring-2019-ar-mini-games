@@ -151,7 +151,10 @@ namespace GoogleARCoreInternal
 
         public void ResetSession()
         {
-            _FireOnSessionSetEnabled(false);
+            if (OnSessionSetEnabled != null)
+            {
+                OnSessionSetEnabled(false);
+            }
             _Initialize();
             ExternApi.ArPresto_reset();
         }

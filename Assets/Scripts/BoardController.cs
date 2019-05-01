@@ -10,6 +10,9 @@ public class BoardController : MonoBehaviour
     public Text scoreText;
     public Text highScoreText;
 
+    public int Score { get => score; }
+    public int HighScore { get => highScore; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,13 +40,13 @@ public class BoardController : MonoBehaviour
         highScoreText.text = "High Score: " + highScore.ToString();
     }
 
-    void saveHighscore()
+    private void saveHighscore()
     {
         PlayerPrefs.SetInt("highscore", highScore);
     }
 
     //initialize the high score
-    void loadHighscore()
+    private void loadHighscore()
     {
         highScore = PlayerPrefs.GetInt("highscore");
     }
