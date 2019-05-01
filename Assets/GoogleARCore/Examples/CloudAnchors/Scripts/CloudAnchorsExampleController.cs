@@ -146,9 +146,13 @@ namespace GoogleARCore.Examples.CloudAnchors
             {
                 TrackableHit hit;
                 if (ARCoreWorldOriginHelper.Raycast(touch.position.x, touch.position.y,
-                        TrackableHitFlags.PlaneWithinPolygon, out hit))
+                                                    TrackableHitFlags.FeaturePointWithSurfaceNormal, out hit))
+                    
                 {
+                 
+                    
                     m_LastPlacedAnchor = hit.Trackable.CreateAnchor(hit.Pose);
+
                 }
             }
             else
@@ -156,7 +160,13 @@ namespace GoogleARCore.Examples.CloudAnchors
                 Pose hitPose;
                 if (m_ARKit.RaycastPlane(ARKitFirstPersonCamera, touch.position.x, touch.position.y, out hitPose))
                 {
+
+                   
+                 
+
                     m_LastPlacedAnchor = m_ARKit.CreateAnchor(hitPose);
+                    m_LastPlacedAnchor.transform.rotation = new Quaternion(-90f, 0, 0, 1f);
+
                 }
             }
 
@@ -281,7 +291,7 @@ namespace GoogleARCore.Examples.CloudAnchors
         {
             // The anchor will be spawned by the host, so no networking Command is needed.
             GameObject.Find("LocalPlayer").GetComponent<LocalPlayerController>()
-                      .SpawnAnchor(Vector3.zero, Quaternion.identity, m_LastPlacedAnchor);
+                      .SpawnAnchor(Vector3.zero, new Quaternion(-90f,0, 0, 1), m_LastPlacedAnchor);
         }
 
         /// <summary>
@@ -291,7 +301,7 @@ namespace GoogleARCore.Examples.CloudAnchors
         {
             // Star must be spawned in the server so a networking Command is used.
             GameObject.Find("LocalPlayer").GetComponent<LocalPlayerController>()
-                      .CmdSpawnStar(m_LastPlacedAnchor.transform.position, m_LastPlacedAnchor.transform.rotation);
+                      .CmdSpawnStar(m_LastPlacedAnchor.transform.position, new Quaternion(-90f, 0, 0, 0));
         }
 
         /// <summary>

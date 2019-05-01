@@ -102,6 +102,7 @@ namespace GoogleARCore.Examples.CloudAnchors
                 GameObject button = Instantiate(JoinRoomListRowPrefab);
                 button.transform.SetParent(RoomListPanel.transform, false);
                 button.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -100 - (200 * i));
+
                 button.SetActive(true);
                 button.GetComponentInChildren<Text>().text = string.Empty;
                 m_JoinRoomButtonsPool.Add(button);

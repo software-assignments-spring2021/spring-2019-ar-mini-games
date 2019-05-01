@@ -61,6 +61,7 @@ namespace GoogleARCore.Examples.CloudAnchors
         public void SpawnAnchor(Vector3 position, Quaternion rotation, Component anchor)
         {
             // Instantiate Anchor model at the hit pose.
+            rotation = new Quaternion(0, -90, 0,1);
             var anchorObject = Instantiate(AnchorPrefab, position, rotation);
 
             // Anchor must be hosted in the device.

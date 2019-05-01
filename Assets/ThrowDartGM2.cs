@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using System; 
 
-public class ThrowRealDart : MonoBehaviour
+public class ThrowDartGM2 : MonoBehaviour
 {
     private Rigidbody rb;
     public int thrust;
     public bool gameOver = false;
-    bool fired = false;
-    public Text dartCounterText;
+    bool fired = false; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,15 +46,25 @@ public class ThrowRealDart : MonoBehaviour
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "DartBoard")
+
+        if (col.gameObject.name == "InnerBoard")
         {
-            this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            // Turn off collider and stop dart
-            rb.velocity = Vector3.zero;
-            // make dart "stick" to board by turning off gravity, movement, rotation
-            rb.useGravity = false;
-            rb.freezeRotation = true;
+
+            restockDarts();
+        }
+        else if (col.gameObject.tag == "DartBoard")
+        {
+            //this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            //// Turn off collider and stop dart
+            //rb.velocity = Vector3.zero;
+            //// make dart "stick" to board by turning off gravity, movement, rotation
+            //rb.useGravity = false;
+            //rb.freezeRotation = true;
         } // end of if dartboard
+
+       
+
+
     }
 
     void DestroyDart()
@@ -71,6 +79,19 @@ public class ThrowRealDart : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    public void restockDarts()
+    {
+        var dartCounterObject = GameObject.Find("DartManager");
+        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
+
+        dartCountScript.dartCounter =2;
+
+
+
+
+
+    }
+
     public void updateDartCounter()
     {
         var dartCounterObject = GameObject.Find("DartManager");
@@ -83,11 +104,8 @@ public class ThrowRealDart : MonoBehaviour
 
             gameOver = true;
         }
-        int currentDartCount = Convert.ToInt32(dartCounterText.text);
-        dartCounterText.text = Convert.ToString(currentDartCount-1);
-
        
-        // updateDartImages(dartCountScript.dartCounter);
+         updateDartImages(dartCountScript.dartCounter);
         
 
     }
@@ -102,6 +120,7 @@ public class ThrowRealDart : MonoBehaviour
     }
 
     public void updateDartImages(int counter){
+        Debug.Log(counter);
         GameObject dartImgNum = GameObject.Find("DartImg" + counter);
         dartImgNum.SetActive(false);
                                           
