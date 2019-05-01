@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class BoardMovementController : MonoBehaviour
 {
@@ -9,6 +12,11 @@ public class BoardMovementController : MonoBehaviour
     float y;
     float z;
     float timeCounter = 0;
+    public float timeCounterSpeed = 1;
+    float rx, ry, rz = 0;
+    public int score;
+
+    public Text scoreText; 
 
     void OnCollisionEnter(Collision collision)
     {
@@ -20,6 +28,10 @@ public class BoardMovementController : MonoBehaviour
 
 
         }
+    }
+
+    void Start(){
+        score = GetComponent<BoardController>().score;
     }
 
 
@@ -38,13 +50,60 @@ public class BoardMovementController : MonoBehaviour
         {
             timeCounter += Time.deltaTime;
         }
-        else{
+        else
+        {
             timeCounter -= Time.deltaTime;
         }
-        x = Mathf.Cos(timeCounter);
-        y = Mathf.Sin(timeCounter);
+        x = Mathf.Cos(timeCounter * timeCounterSpeed);
+        y = Mathf.Sin(timeCounter * timeCounterSpeed);
         z = 5;
         transform.position = new Vector3(x, y, z);
+
+       
+        transform.Rotate(rx,ry,rz);
+        Debug.Log("score " + score);
+
+        DifficultyManager();
+
+
+    }
+
+
+    void DifficultyManager(){
+        score = GetComponent<BoardController>().score;
+        Debug.Log("score " + score);
+
+        if (score > 10f && score <= 20f){
+            timeCounterSpeed = 1.5f;
+ 
+        }
+        else if (score > 20f && score <= 40f){
+            timeCounterSpeed = 2f;
+        }
+
+        else if(score > 40f && score <= 60f){
+
+            timeCounterSpeed = 1f;
+            rx = 1.0f;
+        }
+
+        else if (score > 60f && score <= 80f)
+        {
+
+            timeCounterSpeed = 1.5f;
+            rx = 1.0f;
+        }
+
+        else if (score > 80f && score <= 100f)
+        {
+
+            timeCounterSpeed = 2f;
+            rx = 1.0f;
+        }
+
+
+
+
 
     }
         

@@ -1098,6 +1098,10 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 1960385523}
+    - target: {fileID: 721928789, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
+      propertyPath: score
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
 --- !u!4 &722395394 stripped
@@ -2798,6 +2802,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1909544251a8346959f2a214afa497d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeCounterSpeed: 1
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &1960385521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,6 +3110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1909544251a8346959f2a214afa497d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeCounterSpeed: 1
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!114 &2117294230
 MonoBehaviour:
   m_ObjectHideFlags: 0
