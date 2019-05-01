@@ -1689,7 +1689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score 0
+  m_Text: 'Score: 0'
 --- !u!222 &1075885025
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2493,7 +2493,7 @@ GameObject:
   - component: {fileID: 1960385524}
   - component: {fileID: 1960385523}
   m_Layer: 5
-  m_Name: highScore
+  m_Name: HighScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
