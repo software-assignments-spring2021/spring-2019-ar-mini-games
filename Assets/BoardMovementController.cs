@@ -57,14 +57,27 @@ public class BoardMovementController : MonoBehaviour
         x = Mathf.Cos(timeCounter * timeCounterSpeed);
         y = Mathf.Sin(timeCounter * timeCounterSpeed);
         z = 5;
-        transform.position = new Vector3(x, y, z);
+        transform.position = new Vector3(x, 0, z);
 
        
         transform.Rotate(rx,ry,rz);
         Debug.Log("score " + score);
 
+        BoardMovement();
         DifficultyManager();
 
+
+    }
+
+    void BoardMovement(){
+        x = Mathf.Cos(timeCounter * timeCounterSpeed);
+        y = Mathf.Sin(timeCounter * timeCounterSpeed);
+        z = 5;
+        transform.position = new Vector3(x, 0, z);
+
+
+        transform.Rotate(rx, ry, rz);
+        Debug.Log("score " + score);
 
     }
 

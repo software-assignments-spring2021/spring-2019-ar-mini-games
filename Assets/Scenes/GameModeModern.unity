@@ -1100,7 +1100,7 @@ PrefabInstance:
       objectReference: {fileID: 1960385523}
     - target: {fileID: 721928789, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
       propertyPath: score
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
@@ -2164,12 +2164,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1334826078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 678eb1650d66d4fe3a48dff71f75a04b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f8b20b7d817e411ea645cff4a872db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 1000
   gameOver: 0
   dartCounterText: {fileID: 1089396529}
+  DartBoard: {fileID: 2117294225}
 --- !u!1 &1473902829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3112,7 +3113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCounterSpeed: 1
   score: 0
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1075885024}
 --- !u!114 &2117294230
 MonoBehaviour:
   m_ObjectHideFlags: 0

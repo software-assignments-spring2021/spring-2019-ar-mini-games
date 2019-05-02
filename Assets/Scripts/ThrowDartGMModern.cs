@@ -12,6 +12,10 @@ public class ThrowDartGMModern : MonoBehaviour
     public bool gameOver = false;
     bool fired = false;
     public Text dartCounterText;
+    public GameObject DartBoard;
+    public GameObject MainCamera;
+    bool hitBoard = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,11 @@ public class ThrowDartGMModern : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hitBoard) { transform.position = new Vector3(DartBoard.transform.position.x, DartBoard.transform.position.y, DartBoard.transform.position.z -1 ); }
+
+        if (!fired){
+            this.gameObject.transform.SetParent(MainCamera.transform);
+        }
         if (Input.GetMouseButtonDown(0) && !fired)
         {
            
@@ -38,7 +47,7 @@ public class ThrowDartGMModern : MonoBehaviour
             this.gameObject.transform.parent = null;
 
             updateDartCounter();
-            Invoke("DestroyDart", 3);
+            Invoke("DestroyDartSetup", 1);
         }
     }
     
@@ -48,19 +57,31 @@ public class ThrowDartGMModern : MonoBehaviour
         if (col.gameObject.tag == "DartBoard")
         {
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
+
             // Turn off collider and stop dart
             rb.velocity = Vector3.zero;
+
             // make dart "stick" to board by turning off gravity, movement, rotation
             rb.useGravity = false;
+
             rb.freezeRotation = true;
+
+            hitBoard = true;
+
         } // end of if dartboard
     }
 
-    void DestroyDart()
+    void DestroyDartSetup()
     {
         getNewDart();
+        Invoke("DestroyDart", 3);
+    }
+
+    void DestroyDart(){
         Destroy(this.gameObject);
     }
+
+
 
     public void updateDartCounter()
     {
@@ -95,10 +116,11 @@ public class ThrowDartGMModern : MonoBehaviour
     public GameObject getNewDart()
     {
         Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
-        GameObject MainCamera = GameObject.FindWithTag("MainCamera");
-        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
-        dartCpy.transform.parent = MainCamera.transform;
-        dartCpy.GetComponent<BoxCollider>().enabled = true;
+        GameObject dartCpy = this.gameObject;
+        dartCpy.transform.SetParent(MainCamera.transform);
+        dartCpy.GetComponent<Collider>().enabled = true;
+        hitBoard = false;
+        Instantiate(dartCpy, p, MainCamera.transform.rotation);
 
         return dartCpy;
     }

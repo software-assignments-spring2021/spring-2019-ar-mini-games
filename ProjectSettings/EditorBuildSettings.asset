@@ -8,10 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: cd40211c8d842413e8e0511c4c00471a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DartsGameARBuild.unity
     guid: 35f0afa4f30eb4f42bb90fb7f0bd7cb2
+  - enabled: 1
+    path: Assets/Scenes/GameModeModern.unity
+    guid: 3d041bbb8c89944178f61c31227ccca0
   m_configObjects: {}

@@ -24,7 +24,6 @@ public class ThrowRealDart : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !fired)
         {
            
-            Debug.Log("pressed");
             if (EventSystem.current.IsPointerOverGameObject() ||
                 EventSystem.current.currentSelectedGameObject != null)
             {
