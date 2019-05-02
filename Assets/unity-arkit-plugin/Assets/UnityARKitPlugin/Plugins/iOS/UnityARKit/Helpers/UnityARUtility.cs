@@ -18,6 +18,8 @@ namespace UnityEngine.XR.iOS
 		{
 			GameObject plane;
 			if (planePrefab != null) {
+                planePrefab.transform.rotation = new Quaternion(-90, 0, 0, 0);
+
 				plane = GameObject.Instantiate(planePrefab);
 			} else {
 				plane = new GameObject (); //put in a blank gameObject to get at least a transform to manipulate
@@ -25,11 +27,11 @@ namespace UnityEngine.XR.iOS
 
 			plane.name = arPlaneAnchor.identifier;
 
-			ARKitPlaneMeshRender apmr = plane.GetComponent<ARKitPlaneMeshRender> ();
-			if (apmr != null) {
-				apmr.InitiliazeMesh (arPlaneAnchor);
-			}
-
+			//ARKitPlaneMeshRender apmr = plane.GetComponent<ARKI> ();
+			//if (apmr != null) {
+			//	apmr.InitiliazeMesh (arPlaneAnchor);
+			//}
+            plane.transform.rotation =new Quaternion(-90, 0, 0, 0);
 			return UpdatePlaneWithAnchorTransform(plane, arPlaneAnchor);
 
 		}
@@ -39,7 +41,7 @@ namespace UnityEngine.XR.iOS
 			
 			//do coordinate conversion from ARKit to Unity
 			plane.transform.position = UnityARMatrixOps.GetPosition (arPlaneAnchor.transform);
-			plane.transform.rotation = UnityARMatrixOps.GetRotation (arPlaneAnchor.transform);
+            plane.transform.rotation = new Quaternion(-90, 0, 0, 0);
 
 			ARKitPlaneMeshRender apmr = plane.GetComponent<ARKitPlaneMeshRender> ();
 			if (apmr != null) {
@@ -52,10 +54,13 @@ namespace UnityEngine.XR.iOS
 			if (mf != null) {
 				if (apmr == null) {
 					//since our plane mesh is actually 10mx10m in the world, we scale it here by 0.1f
-					mf.gameObject.transform.localScale = new Vector3 (arPlaneAnchor.extent.x * 0.1f, arPlaneAnchor.extent.y * 0.1f, arPlaneAnchor.extent.z * 0.1f);
+					//mf.gameObject.transform.localScale = new Vector3 (arPlaneAnchor.extent.x * 0.1f, arPlaneAnchor.extent.y * 0.1f, arPlaneAnchor.extent.z * 0.1f);
 
 	                //convert our center position to unity coords
-	                mf.gameObject.transform.localPosition = new Vector3(arPlaneAnchor.center.x,arPlaneAnchor.center.y, -arPlaneAnchor.center.z);
+	              //  mf.gameObject.transform.localPosition = new Vector3(arPlaneAnchor.center.x,arPlaneAnchor.center.y, -arPlaneAnchor.center.z);
+                    mf.transform.rotation = new Quaternion(-90, 0, 0, 0);
+
+
 				}
 
 			}
