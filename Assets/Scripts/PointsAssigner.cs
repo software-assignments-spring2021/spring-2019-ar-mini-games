@@ -8,8 +8,10 @@ public class PointsAssigner : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Dart")){
 
+        if (collision.gameObject.CompareTag("Dart"))
+        {
+            collision.gameObject.tag = "InactiveDart";
             this.gameObject.GetComponentInParent<BoardController>().UpdateScore(pointsValue);
 
            

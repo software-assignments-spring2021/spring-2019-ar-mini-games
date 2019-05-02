@@ -2164,13 +2164,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1334826078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f8b20b7d817e411ea645cff4a872db9, type: 3}
+  m_Script: {fileID: 11500000, guid: 678eb1650d66d4fe3a48dff71f75a04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 1000
+  thrust: 100
   gameOver: 0
   dartCounterText: {fileID: 1089396529}
-  DartBoard: {fileID: 2117294225}
 --- !u!1 &1473902829
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,7 +2769,8 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &1742071814 stripped
 GameObject:

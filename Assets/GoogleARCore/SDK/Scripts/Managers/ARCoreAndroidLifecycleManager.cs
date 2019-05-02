@@ -151,6 +151,7 @@ namespace GoogleARCoreInternal
 
         public void ResetSession()
         {
+
             if (OnSessionSetEnabled != null)
             {
                 OnSessionSetEnabled(false);
