@@ -17,6 +17,11 @@ public class PointsAssigner : MonoBehaviour
         //    }
 
         //}
+        if (collision.gameObject.CompareTag("Dart"))
+        {
+            collision.gameObject.tag = "InactiveDart";
+            this.gameObject.GetComponentInParent<BoardController>().UpdateScore(pointsValue);
+        }
     }
 
 
