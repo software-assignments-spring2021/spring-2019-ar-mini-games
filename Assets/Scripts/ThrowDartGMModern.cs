@@ -15,90 +15,72 @@ public class ThrowDartGMModern : MonoBehaviour
     public GameObject DartBoard;
     public GameObject MainCamera;
     bool hitBoard = false;
-
+    Transform cameraChildTransform;
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+        Transform cameraChildTransform = transform;
+
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        if (hitBoard) { transform.position = new Vector3(DartBoard.transform.position.x, DartBoard.transform.position.y, DartBoard.transform.position.z -1 ); }
-
-        if (!fired){
-            this.gameObject.transform.SetParent(MainCamera.transform);
-        }
-        if (Input.GetMouseButtonDown(0) && !fired)
+        // click screen to throw dart
+        if (Input.GetMouseButtonDown(0) && !gameOver)
         {
-           
-            Debug.Log("pressed");
-            if (EventSystem.current.IsPointerOverGameObject() ||
-                EventSystem.current.currentSelectedGameObject != null)
             {
-               
-                return;
+                Debug.Log("pressed");
+                rb.useGravity = true;
+                rb.AddForce(transform.forward * thrust);
+                this.gameObject.transform.parent = null;
+                Invoke("DestroyDart", 3);
             }
-           
-            fired = true;
-            rb.useGravity = true;
-            rb.AddForce(transform.forward * thrust);
-            this.gameObject.transform.parent = null;
-
-            updateDartCounter();
-            Invoke("DestroyDartSetup", 1);
         }
     }
-    
+
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "DartBoard")
         {
-            this.gameObject.GetComponent<BoxCollider>().enabled = false;
-
             // Turn off collider and stop dart
+            gameObject.GetComponent<BoxCollider>().enabled = false;
             rb.velocity = Vector3.zero;
-
             // make dart "stick" to board by turning off gravity, movement, rotation
             rb.useGravity = false;
-
             rb.freezeRotation = true;
-
-            hitBoard = true;
+          
+            transform.SetParent(DartBoard.transform);
+            transform.localScale = new Vector3(80, 80, 80);
 
         } // end of if dartboard
     }
 
-    void DestroyDartSetup()
+    void DestroyDart()
     {
-        getNewDart();
-        Invoke("DestroyDart", 3);
-    }
+        updateDartCounter();
+        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.45f, 0.8f));
 
-    void DestroyDart(){
+        GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
+        dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
+        dartCpy.transform.localScale = new Vector3(80, 80, 80);
+        dartCpy.transform.position = cameraChildTransform.position;
+        dartCpy.GetComponent<BoxCollider>().enabled = true;
         Destroy(this.gameObject);
     }
-
-
 
     public void updateDartCounter()
     {
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
-
         dartCountScript.dartCounter -= 1;
 
         if (dartCountScript.dartCounter <= 0)
         {
-
             gameOver = true;
         }
-        int currentDartCount = Convert.ToInt32(dartCounterText.text);
-        dartCounterText.text = Convert.ToString(currentDartCount-1);
-
-       
     }
 
     public int getDartCounter()
@@ -107,21 +89,5 @@ public class ThrowDartGMModern : MonoBehaviour
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         return dartCountScript.dartCounter;
     }
-
-    public void updateDartImages(int counter){
-        GameObject dartImgNum = GameObject.Find("DartImg" + counter);
-        dartImgNum.SetActive(false);
-    }
-
-    public GameObject getNewDart()
-    {
-        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
-        GameObject dartCpy = this.gameObject;
-        dartCpy.transform.SetParent(MainCamera.transform);
-        dartCpy.GetComponent<Collider>().enabled = true;
-        hitBoard = false;
-        Instantiate(dartCpy, p, MainCamera.transform.rotation);
-
-        return dartCpy;
-    }
 }
+
