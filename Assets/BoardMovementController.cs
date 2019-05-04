@@ -88,15 +88,16 @@ public class BoardMovementController : MonoBehaviour
         score = GetComponent<BoardController>().score;
 //        Debug.Log("score " + score);
 
-        if (score > 10f && score <= 20f){
+        if (score > 10f && score <= 30f){
             timeCounterSpeed = 1.5f;
             x = Mathf.Cos(timeCounter * timeCounterSpeed);
             y = Mathf.Sin(timeCounter * timeCounterSpeed);
             z = 5;
             transform.position = new Vector3(x, 0, z);
+           
  
         }
-        else if (score > 20f && score <= 40f){
+        else if (score > 30f && score <= 60f){
             timeCounterSpeed = 2f;
             x = Mathf.Cos(timeCounter * timeCounterSpeed);
             y = Mathf.Sin(timeCounter * timeCounterSpeed);
@@ -104,7 +105,7 @@ public class BoardMovementController : MonoBehaviour
             transform.position = new Vector3(0, y, z);
         }
 
-        else if(score > 40f && score <= 60f){
+        else if(score > 60f && score <= 80f){
 
             timeCounterSpeed = 1f;
       
@@ -113,9 +114,10 @@ public class BoardMovementController : MonoBehaviour
             z = 5;
             transform.position = new Vector3(x, y, z);
             rx = 1.0f;
+           
         }
 
-        else if (score > 60f && score <= 80f)
+        else if (score > 80f && score <= 100f)
         {
 
             timeCounterSpeed = 1.5f;
@@ -126,7 +128,7 @@ public class BoardMovementController : MonoBehaviour
             rx = 1.0f;
         }
 
-        else if (score > 80f && score <= 100f)
+        else if (score > 100f)
         {
 
             timeCounterSpeed = 2f;
@@ -135,8 +137,11 @@ public class BoardMovementController : MonoBehaviour
             y = Mathf.Sin(timeCounter * timeCounterSpeed);
             z = 5;
             transform.position = new Vector3(x, y, z);
-            rx = 1.0f;
+            rx = 1.5f;
+            transform.Rotate(rx, ry, rz);
         }
+
+
 
 
 
