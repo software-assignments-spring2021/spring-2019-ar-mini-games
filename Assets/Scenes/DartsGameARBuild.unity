@@ -1347,7 +1347,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BackgroundMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: f1d9352050a75486f878ab19fa578f16, type: 2}
+      objectReference: {fileID: 2100000, guid: 280896c82c3b5794f9d524e26a91c7b5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ba1163d3c08b646b627b1e6fa6d6e5, type: 3}
 --- !u!1 &853576744
