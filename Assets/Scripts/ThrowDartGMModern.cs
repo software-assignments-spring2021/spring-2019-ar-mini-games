@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+
 using System; 
 
 public class ThrowDartGMModern : MonoBehaviour
@@ -15,7 +16,7 @@ public class ThrowDartGMModern : MonoBehaviour
     public GameObject DartBoard;
     public GameObject MainCamera;
     bool hitBoard = false;
-    Transform cameraChildTransform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,7 +67,7 @@ public class ThrowDartGMModern : MonoBehaviour
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
         dartCpy.transform.localScale = new Vector3(80, 80, 80);
-        dartCpy.transform.position = cameraChildTransform.position;
+        //dartCpy.transform.position = cameraChildTransform.position;
         dartCpy.GetComponent<BoxCollider>().enabled = true;
         Destroy(this.gameObject);
     }
@@ -76,6 +77,8 @@ public class ThrowDartGMModern : MonoBehaviour
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         dartCountScript.dartCounter -= 1;
+        Debug.Log("dart counter " + dartCountScript.dartCounter);
+        dartCounterText.text = Convert.ToString(dartCountScript.dartCounter);
 
         if (dartCountScript.dartCounter <= 0)
         {
@@ -83,11 +86,6 @@ public class ThrowDartGMModern : MonoBehaviour
         }
     }
 
-    public int getDartCounter()
-    {
-        var dartCounterObject = GameObject.Find("DartManager");
-        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
-        return dartCountScript.dartCounter;
-    }
+ 
 }
 

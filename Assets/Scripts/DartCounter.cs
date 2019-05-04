@@ -5,7 +5,7 @@ using UnityEngine;
 public class DartCounter : MonoBehaviour
 {
 
-    public int dartCounter = 5;
+    public int dartCounter = 3;
     public GameObject gameOverPanel;
     // Start is called before the first frame update
 

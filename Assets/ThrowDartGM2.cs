@@ -1,134 +1,136 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEngine.EventSystems;
 
-public class ThrowDartGM2 : MonoBehaviour
-{
-    private Rigidbody rb;
-    public int thrust;
-    public bool gameOver = false;
-    bool fired = false; 
+//public class ThrowDartGM2 : MonoBehaviour
+//{
+//    private Rigidbody rb;
+//    public int thrust;
+//    public bool gameOver = false;
+//    bool fired = false; 
+//    pub
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = this.GetComponent<Rigidbody>();
-    }
+//    // Start is called before the first frame update
+//    void Start()
+//    {
+//        rb = this.GetComponent<Rigidbody>();
+//    }
     
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && !fired)
-        {
+//    // Update is called once per frame
+//    void Update()
+//    {
+//        if (Input.GetMouseButtonDown(0) && !fired)
+//        {
            
-            Debug.Log("pressed");
-            if (EventSystem.current.IsPointerOverGameObject() ||
-                EventSystem.current.currentSelectedGameObject != null)
-            {
+//            Debug.Log("pressed");
+//            if (EventSystem.current.IsPointerOverGameObject() ||
+//                EventSystem.current.currentSelectedGameObject != null)
+//            {
                
-                return;
-            }
+//                return;
+//            }
            
-            fired = true;
-            rb.useGravity = true;
-            rb.AddForce(transform.forward * thrust);
-            this.gameObject.transform.parent = null;
+//            fired = true;
+//            rb.useGravity = true;
+//            rb.AddForce(transform.forward * thrust);
+//            this.gameObject.transform.parent = null;
 
-            updateDartCounter();
-            Invoke("DestroyDart", 3);
-        }
+//            updateDartCounter();
+//            Invoke("DestroyDart", 3);
+//        }
 
        
 
-    }
+//    }
     
-    // detect objects the dart collides with
-    void OnCollisionEnter(Collision col)
-    {
+//    // detect objects the dart collides with
+//    void OnCollisionEnter(Collision col)
+//    {
 
-        if (col.gameObject.name == "InnerBoard")
-        {
+//        if (col.gameObject.name == "InnerBoard")
+//        {
 
-            restockDarts();
-        }
-        else if (col.gameObject.tag == "DartBoard")
-        {
-            //this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            //// Turn off collider and stop dart
-            //rb.velocity = Vector3.zero;
-            //// make dart "stick" to board by turning off gravity, movement, rotation
-            //rb.useGravity = false;
-            //rb.freezeRotation = true;
-        } // end of if dartboard
+//            restockDarts();
+//        }
+//        else if (col.gameObject.tag == "DartBoard")
+//        {
+//            //this.gameObject.GetComponent<BoxCollider>().enabled = false;
+//            //// Turn off collider and stop dart
+//            //rb.velocity = Vector3.zero;
+//            //// make dart "stick" to board by turning off gravity, movement, rotation
+//            //rb.useGravity = false;
+//            //rb.freezeRotation = true;
+//        } // end of if dartboard
 
        
 
 
-    }
+//    }
 
-    void DestroyDart()
-    {
-        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
+//    void DestroyDart()
+//    {
+//        Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.55f, 0.45f,0.75f));
 
-        GameObject MainCamera = GameObject.FindWithTag("MainCamera");
-        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
-        dartCpy.transform.parent = MainCamera.transform;
-        dartCpy.GetComponent<BoxCollider>().enabled = true;
+//        GameObject MainCamera = GameObject.FindWithTag("MainCamera");
+//        GameObject dartCpy = Instantiate(this.gameObject, p, MainCamera.transform.rotation);
+//        dartCpy.transform.parent = MainCamera.transform;
+//        dartCpy.GetComponent<BoxCollider>().enabled = true;
 
-        Destroy(this.gameObject);
-    }
+//        Destroy(this.gameObject);
+//    }
 
-    public void restockDarts()
-    {
-        var dartCounterObject = GameObject.Find("DartManager");
-        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
+//    public void restockDarts()
+//    {
+//        var dartCounterObject = GameObject.Find("DartManager");
+//        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
 
-        dartCountScript.dartCounter =2;
-
-
+//        dartCountScript.dartCounter =2;
 
 
 
-    }
 
-    public void updateDartCounter()
-    {
-        var dartCounterObject = GameObject.Find("DartManager");
-        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
 
-        dartCountScript.dartCounter -= 1;
+//    }
 
-        if (dartCountScript.dartCounter <= 0)
-        {
+//    public void updateDartCounter()
+//    {
+//        var dartCounterObject = GameObject.Find("DartManager");
+//        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
 
-            gameOver = true;
-        }
+//        dartCountScript.dartCounter -= 1;
+//        Debug.Log("dart count " + dartCountScript.dartCounter);
+//        if (dartCountScript.dartCounter <= 0)
+//        {
+
+//            gameOver = true;
+//        }
        
-         updateDartImages(dartCountScript.dartCounter);
+//         updateDartImages(dartCountScript.dartCounter);
         
 
-    }
+//    }
 
-    public int getDartCounter()
-    {
-        var dartCounterObject = GameObject.Find("DartManager");
-        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
-        return dartCountScript.dartCounter;
+//    public int getDartCounter()
+//    {
+//        var dartCounterObject = GameObject.Find("DartManager");
+//        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
+//        return dartCountScript.dartCounter;
 
 
-    }
+//    }
 
-    public void updateDartImages(int counter){
-        Debug.Log(counter);
-        GameObject dartImgNum = GameObject.Find("DartImg" + counter);
-        dartImgNum.SetActive(false);
+//    public void updateDartImages(int counter){
+//        Debug.Log(counter);
+//        GameObject dartImgNum = GameObject.Find("DartImg" + counter);
+//      //  DartCounterT
+//        dartImgNum.SetActive(false);
                                           
 
-    }
+//    }
 
 
 
 
 
-}
+//}
