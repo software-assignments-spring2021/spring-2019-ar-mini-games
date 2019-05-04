@@ -11,11 +11,9 @@ public class ThrowDartGMModern : MonoBehaviour
     private Rigidbody rb;
     public int thrust;
     public bool gameOver = false;
-    bool fired = false;
     public Text dartCounterText;
     public GameObject DartBoard;
     public GameObject MainCamera;
-    bool hitBoard = false;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +42,14 @@ public class ThrowDartGMModern : MonoBehaviour
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "DartBoard")
+
+        if (col.gameObject.name == "InnerBoard")
+        {
+            Debug.Log("hit the inner board yes");
+            restockDarts();
+
+        }
+        else if (col.gameObject.tag == "DartBoard")
         {
             // Turn off collider and stop dart
             gameObject.GetComponent<BoxCollider>().enabled = false;
@@ -57,6 +62,16 @@ public class ThrowDartGMModern : MonoBehaviour
             transform.localScale = new Vector3(80, 80, 80);
 
         } // end of if dartboard
+
+
+
+    }
+
+    void restockDarts(){
+        var dartCounterObject = GameObject.Find("DartManager");
+        var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
+        dartCountScript.dartCounter = 3;
+        dartCounterText.text = Convert.ToString(dartCountScript.dartCounter);
     }
 
     void DestroyDart()

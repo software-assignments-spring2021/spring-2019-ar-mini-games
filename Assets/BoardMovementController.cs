@@ -15,12 +15,14 @@ public class BoardMovementController : MonoBehaviour
     public float timeCounterSpeed = 1;
     float rx, ry, rz = 0;
     public int score;
-
+    int currentRound = 1;
+    public GameObject bullseye;  
     public Text scoreText; 
+   
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Dart")
+        if (collision.gameObject.name == "InnerBoard")
         {
 
             Debug.Log("tag inner board");
@@ -35,6 +37,7 @@ public class BoardMovementController : MonoBehaviour
     }
 
 
+
     // Update is called once per frame
     void Update()
     {
@@ -46,6 +49,8 @@ public class BoardMovementController : MonoBehaviour
         //}
         // end of for game testing only
 
+
+
         if (isHit == 1)
         {
             timeCounter += Time.deltaTime;
@@ -54,49 +59,59 @@ public class BoardMovementController : MonoBehaviour
         {
             timeCounter -= Time.deltaTime;
         }
-        x = Mathf.Cos(timeCounter * timeCounterSpeed);
-        y = Mathf.Sin(timeCounter * timeCounterSpeed);
-        z = 5;
-        transform.position = new Vector3(x, 0, z);
+       
 
        
-        transform.Rotate(rx,ry,rz);
-        Debug.Log("score " + score);
-
-        BoardMovement();
         DifficultyManager();
 
 
     }
 
-    void BoardMovement(){
+
+ 
+
+    void BoardMovement(float x, float y, float z){
         x = Mathf.Cos(timeCounter * timeCounterSpeed);
         y = Mathf.Sin(timeCounter * timeCounterSpeed);
         z = 5;
-        transform.position = new Vector3(x, 0, z);
+        transform.position = new Vector3(x, y, z);
 
 
         transform.Rotate(rx, ry, rz);
-        Debug.Log("score " + score);
+      
 
     }
 
 
+
     void DifficultyManager(){
         score = GetComponent<BoardController>().score;
-        Debug.Log("score " + score);
+//        Debug.Log("score " + score);
 
         if (score > 10f && score <= 20f){
             timeCounterSpeed = 1.5f;
+            x = Mathf.Cos(timeCounter * timeCounterSpeed);
+            y = Mathf.Sin(timeCounter * timeCounterSpeed);
+            z = 5;
+            transform.position = new Vector3(x, 0, z);
  
         }
         else if (score > 20f && score <= 40f){
             timeCounterSpeed = 2f;
+            x = Mathf.Cos(timeCounter * timeCounterSpeed);
+            y = Mathf.Sin(timeCounter * timeCounterSpeed);
+            z = 5;
+            transform.position = new Vector3(0, y, z);
         }
 
         else if(score > 40f && score <= 60f){
 
             timeCounterSpeed = 1f;
+      
+            x = Mathf.Cos(timeCounter * timeCounterSpeed);
+            y = Mathf.Sin(timeCounter * timeCounterSpeed);
+            z = 5;
+            transform.position = new Vector3(x, y, z);
             rx = 1.0f;
         }
 
@@ -104,6 +119,10 @@ public class BoardMovementController : MonoBehaviour
         {
 
             timeCounterSpeed = 1.5f;
+            x = Mathf.Cos(timeCounter * timeCounterSpeed);
+            y = Mathf.Sin(timeCounter * timeCounterSpeed);
+            z = 5;
+            transform.position = new Vector3(x, y, z);
             rx = 1.0f;
         }
 
@@ -111,6 +130,11 @@ public class BoardMovementController : MonoBehaviour
         {
 
             timeCounterSpeed = 2f;
+            timeCounterSpeed = 2f;
+            x = Mathf.Cos(timeCounter * timeCounterSpeed);
+            y = Mathf.Sin(timeCounter * timeCounterSpeed);
+            z = 5;
+            transform.position = new Vector3(x, y, z);
             rx = 1.0f;
         }
 

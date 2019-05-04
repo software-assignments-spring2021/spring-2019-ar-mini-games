@@ -5,11 +5,12 @@ using UnityEngine;
 public class PointsAssigner : MonoBehaviour
 {
     public int pointsValue;
+    public GameObject DartBoard; 
 
     void OnCollisionEnter(Collision collision)
     {
-
-        if (collision.gameObject.CompareTag("Dart"))
+       
+            if (collision.gameObject.CompareTag("Dart"))
         {
          //   collision.gameObject.tag = "InactiveDart";
             Debug.Log("hit points assigner");
@@ -18,7 +19,13 @@ public class PointsAssigner : MonoBehaviour
            
 
         }
+
+
+
+       
+
     }
 
+        
 
 }
