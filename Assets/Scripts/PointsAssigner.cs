@@ -5,7 +5,7 @@ using UnityEngine;
 public class PointsAssigner : MonoBehaviour
 {
     public int pointsValue;
-    public GameObject DartBoard; 
+
 
     void OnCollisionEnter(Collision collision)
     {

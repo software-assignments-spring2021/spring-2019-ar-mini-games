@@ -683,6 +683,7 @@ GameObject:
   - component: {fileID: 270544938}
   - component: {fileID: 270544937}
   - component: {fileID: 270544936}
+  - component: {fileID: 270544939}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -750,13 +751,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1479723261}
-        m_MethodName: ClickToRestartScene
-        m_Mode: 1
+      - m_Target: {fileID: 270544939}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -800,6 +801,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270544934}
   m_CullTransparentMesh: 0
+--- !u!114 &270544939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270544934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a14214ac781f4e89b79f7404e40b460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &341851600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,7 +2203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 100
-  gameOver: 0
   dartCounterText: {fileID: 1089396529}
   DartBoard: {fileID: 2117294225}
   MainCamera: {fileID: 7}
@@ -2815,6 +2827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsValue: 10
+  DartBoard: {fileID: 0}
 --- !u!1 &1960385521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,6 +3135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeCounterSpeed: 1
   score: 0
+  bullseye: {fileID: 0}
   scoreText: {fileID: 1075885024}
 --- !u!1 &2134794026
 GameObject:
