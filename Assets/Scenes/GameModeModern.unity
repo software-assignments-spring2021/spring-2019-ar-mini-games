@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 229804521}
   m_Layer: 0
   m_Name: CameraParent
-  m_TagString: Untagged
+  m_TagString: AppleCameraParent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1115,6 +1115,16 @@ PrefabInstance:
       propertyPath: score
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6353486545562644286, guid: a7d35b737f7c23a4daada8f4cf4982d2,
+        type: 3}
+      propertyPath: pointsValue
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5940875248244411801, guid: a7d35b737f7c23a4daada8f4cf4982d2,
+        type: 3}
+      propertyPath: pointsValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1742071816, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1126,16 +1136,6 @@ PrefabInstance:
     - target: {fileID: 1742071816, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
       propertyPath: m_Convex
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6353486545562644286, guid: a7d35b737f7c23a4daada8f4cf4982d2,
-        type: 3}
-      propertyPath: pointsValue
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5940875248244411801, guid: a7d35b737f7c23a4daada8f4cf4982d2,
-        type: 3}
-      propertyPath: pointsValue
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
@@ -1230,12 +1230,17 @@ PrefabInstance:
     - target: {fileID: 8733739304348682794, guid: f0ba1163d3c08b646b627b1e6fa6d6e5,
         type: 3}
       propertyPath: m_Name
-      value: AndroidCameraParent
+      value: CameraParent
       objectReference: {fileID: 0}
     - target: {fileID: 8733739304348682794, guid: f0ba1163d3c08b646b627b1e6fa6d6e5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733739304348682794, guid: f0ba1163d3c08b646b627b1e6fa6d6e5,
+        type: 3}
+      propertyPath: m_TagString
+      value: AndroidCameraParent
       objectReference: {fileID: 0}
     - target: {fileID: 8736414351796824802, guid: f0ba1163d3c08b646b627b1e6fa6d6e5,
         type: 3}
@@ -1296,7 +1301,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BackgroundMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: f1d9352050a75486f878ab19fa578f16, type: 2}
+      objectReference: {fileID: 2100000, guid: 280896c82c3b5794f9d524e26a91c7b5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0ba1163d3c08b646b627b1e6fa6d6e5, type: 3}
 --- !u!1 &816518679
@@ -2341,6 +2346,7 @@ GameObject:
   - component: {fileID: 1479723262}
   - component: {fileID: 1479723261}
   - component: {fileID: 1479723263}
+  - component: {fileID: 1479723264}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -2387,6 +2393,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceToCamera: 5
+--- !u!114 &1479723264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479723260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df04399791c0214bbcc52dc429728f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1511183073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2827,7 +2845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsValue: 10
-  DartBoard: {fileID: 0}
 --- !u!1 &1960385521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,6 +3257,7 @@ GameObject:
   - component: {fileID: 2135049148}
   - component: {fileID: 2135049147}
   - component: {fileID: 2135049146}
+  - component: {fileID: 2135049149}
   m_Layer: 5
   m_Name: PlayAgainButton
   m_TagString: Untagged
@@ -3307,13 +3325,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1479723261}
-        m_MethodName: ClickToRestartScene
-        m_Mode: 1
+      - m_Target: {fileID: 2135049149}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3357,6 +3375,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135049144}
   m_CullTransparentMesh: 0
+--- !u!114 &2135049149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135049144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a14214ac781f4e89b79f7404e40b460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7268304441972974288
 PrefabInstance:
   m_ObjectHideFlags: 0
