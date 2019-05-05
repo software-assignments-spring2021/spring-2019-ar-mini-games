@@ -408,6 +408,16 @@ PrefabInstance:
       propertyPath: dartCounterText
       value: 
       objectReference: {fileID: 1089396529}
+    - target: {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 236666369}
+    - target: {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &126753658
@@ -546,6 +556,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &236666369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8734700563696913324, guid: f0ba1163d3c08b646b627b1e6fa6d6e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 767599778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &238418513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,6 +2554,16 @@ PrefabInstance:
       propertyPath: dartCounterText
       value: 
       objectReference: {fileID: 1089396529}
+    - target: {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
+    - target: {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 7}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &1742071814 stripped
@@ -2559,6 +2585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsValue: 5
+  DartBoard: {fileID: 0}
 --- !u!1 &1960385521
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class DartCounter : MonoBehaviour
     void Update()
     {
 
-        if (dartCounter <= 0 && ThrowDartGMModern.gameOver == true){
+        if (dartCounter <= 0 && ThrowDartGMModern.gameOver == true ||ThrowRealDart.gameOver == true ){
            
             gameOverPanel.SetActive(true);
         }
