@@ -8,10 +8,21 @@ public class PointsAssigner : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+//        if (collision.gameObject.CompareTag("Dart"))
+//        {
+///            this.gameObject.GetComponentInParent<BoardControllerGM2>().UpdateScore(pointsValue);
+
+        //    if (this.gameObject.name == "InnerBoard"){
+        //        print("hit inner board");
+        //    }
+
+        //}
         if (collision.gameObject.CompareTag("Dart"))
         {
             collision.gameObject.tag = "InactiveDart";
             this.gameObject.GetComponentInParent<BoardController>().UpdateScore(pointsValue);
         }
     }
+
+
 }

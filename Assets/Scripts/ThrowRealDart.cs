@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using System; 
 
 public class ThrowRealDart : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class ThrowRealDart : MonoBehaviour
     public int thrust;
     public bool gameOver = false;
     bool fired = false;
+    public Text dartCounterText;
+
     bool hitDart = false;
 
     // Start is called before the first frame update
@@ -67,7 +71,11 @@ public class ThrowRealDart : MonoBehaviour
 
             gameOver = true;
         }
-         updateDartImages(dartCountScript.dartCounter);
+        int currentDartCount = Convert.ToInt32(dartCounterText.text);
+        dartCounterText.text = Convert.ToString(currentDartCount-1);
+
+       
+
     }
 
     public int getDartCounter()
