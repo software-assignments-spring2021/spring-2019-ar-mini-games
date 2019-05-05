@@ -12,6 +12,7 @@ public class ThrowRealDart : MonoBehaviour
     public bool gameOver = false;
     bool fired = false;
     public Text dartCounterText;
+
     bool hitDart = false;
 
     // Start is called before the first frame update
@@ -74,9 +75,6 @@ public class ThrowRealDart : MonoBehaviour
         int currentDartCount = Convert.ToInt32(dartCounterText.text);
         dartCounterText.text = Convert.ToString(currentDartCount-1);
 
-       
-
-//         updateDartImages(dartCountScript.dartCounter);
 
     }
 
