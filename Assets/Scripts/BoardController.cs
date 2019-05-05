@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class BoardController : MonoBehaviour
 {
-    private int score;
+    public int score;
     private int highScore;
     public Text scoreText;
     public Text highScoreText;
+    bool fired = false;
+
 
     public int Score { get => score; }
     public int HighScore { get => highScore; }
@@ -16,7 +18,7 @@ public class BoardController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        //score = 0;
         loadHighscore();
         showText();
     }

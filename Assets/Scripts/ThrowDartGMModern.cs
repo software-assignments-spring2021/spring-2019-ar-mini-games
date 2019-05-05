@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-using System;
+using System; 
 
-public class ThrowRealDart : MonoBehaviour
+public class ThrowDartGMModern : MonoBehaviour
 {
     private Rigidbody rb;
     public int thrust;
@@ -14,7 +14,7 @@ public class ThrowRealDart : MonoBehaviour
     public Text dartCounterText;
     public GameObject DartBoard;
     public GameObject MainCamera;
-    bool fired = false;
+    bool fired = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -36,14 +36,14 @@ public class ThrowRealDart : MonoBehaviour
             {
                 return;
             }
-            fired = true;
-
-            Debug.Log("pressed");
-            rb.useGravity = true;
-            rb.AddForce(transform.forward * thrust);
-            this.gameObject.transform.parent = null;
-            updateDartCounter();
-            Invoke("DestroyDart", 3);
+                 fired = true;
+            
+                Debug.Log("pressed");
+                rb.useGravity = true;
+                rb.AddForce(transform.forward * thrust);
+                this.gameObject.transform.parent = null;
+                updateDartCounter();
+                Invoke("DestroyDart", 3);
 
         }
     }
@@ -66,7 +66,7 @@ public class ThrowRealDart : MonoBehaviour
             // make dart "stick" to board by turning off gravity, movement, rotation
             rb.useGravity = false;
             rb.freezeRotation = true;
-
+          
             transform.SetParent(DartBoard.transform);
             transform.localScale = new Vector3(80, 80, 80);
 
@@ -76,8 +76,7 @@ public class ThrowRealDart : MonoBehaviour
 
     }
 
-    void restockDarts()
-    {
+    void restockDarts(){
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         dartCountScript.dartCounter = 3;
@@ -86,7 +85,7 @@ public class ThrowRealDart : MonoBehaviour
 
     void DestroyDart()
     {
-
+        
         Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.45f, 0.8f));
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
@@ -104,19 +103,18 @@ public class ThrowRealDart : MonoBehaviour
         dartCounterText.text = Convert.ToString(dartCountScript.dartCounter);
         Invoke("isGameOver", 2);
 
-
+       
     }
 
-    void isGameOver()
-    {
+    void isGameOver(){
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
         if (dartCountScript.dartCounter <= 0)
         {
-            gameOver = true;
+          gameOver = true;
         }
     }
 
-
+ 
 }
 
