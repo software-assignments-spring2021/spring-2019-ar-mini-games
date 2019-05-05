@@ -2744,6 +2744,11 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &1742071814 stripped
