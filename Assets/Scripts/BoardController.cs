@@ -9,6 +9,8 @@ public class BoardController : MonoBehaviour
     private int highScore;
     public Text scoreText;
     public Text highScoreText;
+    bool fired = false;
+
 
     public int Score { get => score; }
     public int HighScore { get => highScore; }
