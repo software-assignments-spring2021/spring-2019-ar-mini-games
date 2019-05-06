@@ -3,77 +3,74 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using System;
 
 public class ThrowRealDart : MonoBehaviour
 {
     private Rigidbody rb;
+    private Scene scene;
     public int thrust;
     public static bool gameOver = false;
     public Text dartCounterText;
     public GameObject DartBoard;
-    public GameObject MainCamera;
     bool fired = false;
+    bool hitDart = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
         rb = this.GetComponent<Rigidbody>();
         Transform cameraChildTransform = transform;
-
     }
 
-
-    // Update is called once per frame
-    void Update()
+    public void Throw()
     {
         // click screen to throw dart
-        if (Input.GetMouseButtonDown(0) && !fired)
+        if (!fired)
         {
-            if (EventSystem.current.IsPointerOverGameObject() ||
-             EventSystem.current.currentSelectedGameObject != null)
+            if (EventSystem.current.IsPointerOverGameObject() || EventSystem.current.currentSelectedGameObject != null)
             {
                 return;
             }
             fired = true;
 
-            Debug.Log("pressed");
             rb.useGravity = true;
             rb.AddForce(transform.forward * thrust);
             this.gameObject.transform.parent = null;
             updateDartCounter();
             Invoke("DestroyDart", 3);
-
         }
     }
 
     // detect objects the dart collides with
     void OnCollisionEnter(Collision col)
     {
-
-        if (col.gameObject.name == "InnerBoard")
+        if (col.gameObject.tag == "DartBoard" && !hitDart)
         {
-            Debug.Log("hit the inner board yes");
-            restockDarts();
-
-        }
-        else if (col.gameObject.tag == "DartBoard")
-        {
-            // Turn off collider and stop dart
+            // Darts are frozen here, and tag is changed in collision detection of PointsAssigner.cs
             gameObject.GetComponent<BoxCollider>().enabled = false;
-            rb.velocity = Vector3.zero;
-            // make dart "stick" to board by turning off gravity, movement, rotation
-            rb.useGravity = false;
-            rb.freezeRotation = true;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
 
             transform.SetParent(DartBoard.transform);
             transform.localScale = new Vector3(80, 80, 80);
-
+            if (scene.name == "GameModeModern")
+            {
+                if (col.gameObject.name == "InnerBoard")
+                {
+                    Debug.Log("hit the inner board yes");
+                    restockDarts();
+                }
+            }
         } // end of if dartboard
-
-
-
+        if (col.gameObject.tag == "InactiveDart")
+        {
+            hitDart = true;
+            gameObject.tag = "InactiveDart"; // Deactivate the dart from scoring
+            rb.AddForce(transform.forward * -5);
+        }
     }
 
     void restockDarts()
@@ -86,16 +83,24 @@ public class ThrowRealDart : MonoBehaviour
 
     void DestroyDart()
     {
-
         Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.45f, 0.8f));
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
         dartCpy.transform.localScale = new Vector3(80, 80, 80);
         dartCpy.GetComponent<BoxCollider>().enabled = true;
-        Destroy(this.gameObject);
+        dartCpy.GetComponent<Rigidbody>().useGravity = false;
+        dartCpy.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
+        dartCpy.gameObject.tag = "Dart";
+        print(scene.name);
+        if (scene.name == "GameModeModern")
+        {
+            print("check");
+            Destroy(this.gameObject);
+        }
     }
 
-    public void updateDartCounter()
+    void updateDartCounter()
     {
         var dartCounterObject = GameObject.Find("DartManager");
         var dartCountScript = dartCounterObject.GetComponent<DartCounter>();
@@ -103,8 +108,6 @@ public class ThrowRealDart : MonoBehaviour
         Debug.Log("dart counter " + dartCountScript.dartCounter);
         dartCounterText.text = Convert.ToString(dartCountScript.dartCounter);
         Invoke("isGameOver", 2);
-
-
     }
 
     void isGameOver()
@@ -115,8 +118,9 @@ public class ThrowRealDart : MonoBehaviour
         {
             gameOver = true;
         }
+        else
+        {
+            gameOver = false;
+        }
     }
-
-
 }
-
