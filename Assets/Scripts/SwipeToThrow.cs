@@ -1,49 +1,83 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
+
+// Credit and thanks to Developer's response on this post:
+// https://stackoverflow.com/questions/41491765/detect-swipe-gesture-direction
 
 public class SwipeToThrow : MonoBehaviour
-
 {
+    public float swipeThreshold = 50f;
+    public float timeThreshold = 0.3f;
 
-    private Vector3 touchPosition;
+    public UnityEvent OnSwipeUp;
 
-    float touchPositionY;
-    float touchPositionX;
-    void Start()
+    private Vector2 fingerDown;
+    private DateTime fingerDownTime;
+    private Vector2 fingerUp;
+    private DateTime fingerUpTime;
+
+    private void Update()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        MainSwipeFunctionality();
-       
-        
-    }
-
-
-    private void MainSwipeFunctionality(){
-
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            float xPos = Input.mousePosition.x;
-            float yPos = Input.mousePosition.y;
-            Vector3 pos = Input.mousePosition;
-
-           // Debug.Log("touched");
-           // if (pos.z > 0.2 && pos.z < 1){
-                pos.z = transform.position.z - Camera.main.transform.position.z;
-                pos.z += yPos;
-                this.gameObject.transform.position = Camera.main.ScreenToWorldPoint(pos);
-
-
-           // }
-
-           
-
-
+            this.fingerDown = Input.mousePosition;
+            this.fingerUp = Input.mousePosition;
+            this.fingerDownTime = DateTime.Now;
         }
+        if (Input.GetMouseButtonUp(0))
+        {
+            this.fingerDown = Input.mousePosition;
+            this.fingerUpTime = DateTime.Now;
+            this.CheckSwipe();
+        }
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                this.fingerDown = touch.position;
+                this.fingerUp = touch.position;
+                this.fingerDownTime = DateTime.Now;
+            }
+            if (touch.phase == TouchPhase.Ended)
+            {
+                this.fingerDown = touch.position;
+                this.fingerUpTime = DateTime.Now;
+                this.CheckSwipe();
+            }
+        }
+    }
+
+    private void CheckSwipe()
+    {
+        float duration = (float)this.fingerUpTime.Subtract(this.fingerDownTime).TotalSeconds;
+        if (duration > this.timeThreshold) return;
+
+        //float deltaX = this.fingerDown.x - this.fingerUp.x;
+        //if (Mathf.Abs(deltaX) > this.swipeThreshold)
+        //{
+        //    if (deltaX > 0)
+        //    {
+        //        this.OnSwipeRight.Invoke();
+        //        //Debug.Log("right");
+        //    }
+        //    else if (deltaX < 0)
+        //    {
+        //        this.OnSwipeLeft.Invoke();
+        //        //Debug.Log("left");
+        //    }
+        //}
+
+        float deltaY = fingerDown.y - fingerUp.y;
+        if (Mathf.Abs(deltaY) > this.swipeThreshold)
+        {
+            if (deltaY > 0)
+            {
+                this.OnSwipeUp.Invoke();
+                //Debug.Log("up");
+            }
+        }
+
+        this.fingerUp = this.fingerDown;
     }
 }
