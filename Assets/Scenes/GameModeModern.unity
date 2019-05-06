@@ -323,6 +323,83 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &70246423
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 722395394}
+    m_Modifications:
+    - target: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_Name
+      value: Dart Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.032
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.861
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &126753658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,141 +1096,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 10}
---- !u!1001 &692253671
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 722395394}
-    m_Modifications:
-    - target: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_Name
-      value: Dart Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.032
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.861
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018342498, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018342498, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
---- !u!1 &692253672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 692253671}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &692253673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692253672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f8b20b7d817e411ea645cff4a872db9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 100
-  dartCounterText: {fileID: 1089396529}
-  DartBoard: {fileID: 2117294225}
-  MainCamera: {fileID: 0}
---- !u!114 &692253674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692253672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0527ee9b6b88e4cf1b29d658f501b778, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  swipeThreshold: 50
-  timeThreshold: 0.3
-  OnSwipeUp:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 692253673}
-        m_MethodName: Throw
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &721928787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2218,34 +2160,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1334826078 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1717974543}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1334826079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
     type: 3}
   m_PrefabInstance: {fileID: 1717974543}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1334826080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334826078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f8b20b7d817e411ea645cff4a872db9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 100
-  dartCounterText: {fileID: 1089396529}
-  DartBoard: {fileID: 2117294225}
-  MainCamera: {fileID: 0}
 --- !u!1 &1479723260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,11 +2494,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dart Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 2166889817129824841, guid: 91238cbd070704be284f16c89436bd6b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2166889817129397865, guid: 91238cbd070704be284f16c89436bd6b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2634,16 +2549,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1018342498, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018342498, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 668882648054936091, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &1742071814 stripped
 GameObject:
