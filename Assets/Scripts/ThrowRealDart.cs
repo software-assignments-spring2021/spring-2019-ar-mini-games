@@ -41,7 +41,8 @@ public class ThrowRealDart : MonoBehaviour
             rb.AddForce(transform.forward * thrust);
             this.gameObject.transform.parent = null;
             updateDartCounter();
-            Invoke("DestroyDart", 3);
+            Invoke("DestroyDart", 1);
+
         }
     }
 
