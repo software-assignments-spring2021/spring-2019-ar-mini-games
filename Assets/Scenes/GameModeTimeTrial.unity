@@ -786,6 +786,7 @@ GameObject:
   - component: {fileID: 270544938}
   - component: {fileID: 270544937}
   - component: {fileID: 270544936}
+  - component: {fileID: 270544939}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -853,13 +854,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1479723261}
-        m_MethodName: ClickToRestartScene
-        m_Mode: 1
+      - m_Target: {fileID: 270544939}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -903,6 +904,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270544934}
   m_CullTransparentMesh: 0
+--- !u!114 &270544939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270544934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a14214ac781f4e89b79f7404e40b460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &341851600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,8 +1950,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 153.44, y: -200}
-  m_SizeDelta: {x: 94.04, y: 30}
+  m_AnchoredPosition: {x: 186.5, y: -200}
+  m_SizeDelta: {x: 125.03, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075885023
 MonoBehaviour:
@@ -3161,6 +3174,7 @@ GameObject:
   - component: {fileID: 2135049148}
   - component: {fileID: 2135049147}
   - component: {fileID: 2135049146}
+  - component: {fileID: 2135049149}
   m_Layer: 5
   m_Name: PlayAgainButton
   m_TagString: Untagged
@@ -3228,13 +3242,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1479723261}
-        m_MethodName: ClickToRestartScene
-        m_Mode: 1
+      - m_Target: {fileID: 2135049149}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3278,3 +3292,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135049144}
   m_CullTransparentMesh: 0
+--- !u!114 &2135049149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135049144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a14214ac781f4e89b79f7404e40b460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
