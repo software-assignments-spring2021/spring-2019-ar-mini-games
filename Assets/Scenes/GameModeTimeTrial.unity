@@ -418,6 +418,14 @@ PrefabInstance:
       propertyPath: DartBoard
       value: 
       objectReference: {fileID: 2117294225}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &126753658
@@ -2665,6 +2673,14 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 7}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &1742071814 stripped
