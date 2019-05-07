@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BoardController : MonoBehaviour
 {
-    public int score;
+    public static int score;
     private int highScore;
     public Text scoreText;
     public Text highScoreText;

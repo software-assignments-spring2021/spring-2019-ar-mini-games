@@ -32,9 +32,9 @@ public class BoardMovementController : MonoBehaviour
         }
     }
 
-    void Start(){
-        score = GetComponent<BoardController>().score;
-    }
+    //void Start(){
+    //    score = GetComponent<BoardController>().score;
+    //}
 
 
 
@@ -85,7 +85,8 @@ public class BoardMovementController : MonoBehaviour
 
 
     void DifficultyManager(){
-        score = GetComponent<BoardController>().score;
+        //score = GetComponent<BoardController>().score;
+        score = BoardController.score;
 //        Debug.Log("score " + score);
 
         if (score > 10f && score <= 30f){

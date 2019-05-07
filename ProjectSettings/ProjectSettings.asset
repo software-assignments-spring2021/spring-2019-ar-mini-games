@@ -155,6 +155,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.ManyGames.ARMiniGames
     Standalone: com.ManyGames.ARMiniGames
+    iOS: com.dartsgamear
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 24
@@ -236,7 +237,7 @@ PlayerSettings:
   iOSManualSigningProvisioningProfileType: 0
   tvOSManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
-  iOSRequireARKit: 0
+  iOSRequireARKit: 1
   appleEnableProMotion: 0
   clonedFromGUID: 00000000000000000000000000000000
   templatePackageId: 

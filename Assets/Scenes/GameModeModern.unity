@@ -1218,16 +1218,6 @@ PrefabInstance:
       propertyPath: score
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6353486545562644286, guid: a7d35b737f7c23a4daada8f4cf4982d2,
-        type: 3}
-      propertyPath: pointsValue
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5940875248244411801, guid: a7d35b737f7c23a4daada8f4cf4982d2,
-        type: 3}
-      propertyPath: pointsValue
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1742071816, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1239,6 +1229,16 @@ PrefabInstance:
     - target: {fileID: 1742071816, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
       propertyPath: m_Convex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353486545562644286, guid: a7d35b737f7c23a4daada8f4cf4982d2,
+        type: 3}
+      propertyPath: pointsValue
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5940875248244411801, guid: a7d35b737f7c23a4daada8f4cf4982d2,
+        type: 3}
+      propertyPath: pointsValue
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d35b737f7c23a4daada8f4cf4982d2, type: 3}
@@ -1625,7 +1625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ccae75c104446d1af1b9915828a4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dartCounter: 3
+  dartCounter: 1
   gameOverPanel: {fileID: 1641860920}
 --- !u!4 &998055636
 Transform:
@@ -2228,6 +2228,7 @@ GameObject:
   - component: {fileID: 1479723261}
   - component: {fileID: 1479723263}
   - component: {fileID: 1479723264}
+  - component: {fileID: 1479723265}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -2284,6 +2285,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9df04399791c0214bbcc52dc429728f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1479723265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479723260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6aa5bab5aa184bf09cfdc945eba5e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1511183073
@@ -2910,6 +2923,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 721928787}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117294226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117294225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bb8a39ce4864ff7af00de0cb9e4b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leaderboardID: 
 --- !u!114 &2117294228
 MonoBehaviour:
   m_ObjectHideFlags: 0
