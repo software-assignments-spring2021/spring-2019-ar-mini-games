@@ -87,10 +87,13 @@ public class ThrowRealDart : MonoBehaviour
         Vector3 p = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.45f, 0.8f));
         GameObject dartCpy = Instantiate(this.gameObject, p, Camera.main.transform.rotation);
         dartCpy.transform.parent = GameObject.FindWithTag("MainCamera").transform;
+        Vector3 pos = new Vector3(0.032f, -0.05f, 0.861f);
         dartCpy.transform.localScale = new Vector3(80, 80, 80);
         dartCpy.GetComponent<BoxCollider>().enabled = true;
         dartCpy.GetComponent<Rigidbody>().useGravity = false;
         dartCpy.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        dartCpy.transform.position = pos;
+
         // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
         dartCpy.gameObject.tag = "Dart";
         print(scene.name);
