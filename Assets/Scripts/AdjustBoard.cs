@@ -8,13 +8,17 @@ public class AdjustBoard : MonoBehaviour
     // Start is called before the first frame update
     bool didPress;
     public int DistanceToCamera;
+    //public GameObject OptionsPanel; 
 
     private void Start()
     {
         didPress = false;
+
+
     }
 
     public void AdjustBoardMain(){
+        //OptionsPanel.SetActive(false);
         GameObject board = GameObject.Find("BasicBoard");
         if (didPress == false)
         {
