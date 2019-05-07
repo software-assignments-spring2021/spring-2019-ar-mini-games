@@ -93,6 +93,7 @@ public class ThrowRealDart : MonoBehaviour
         dartCpy.GetComponent<Rigidbody>().useGravity = false;
         dartCpy.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         dartCpy.transform.position = pos;
+
         // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
         dartCpy.gameObject.tag = "Dart";
         print(scene.name);
