@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameModeModern.unity
     guid: 3d041bbb8c89944178f61c31227ccca0
+  - enabled: 1
+    path: Assets/Scenes/GameModeTimeTrial.unity
+    guid: 54c3007e75c954ca2aaf373f44c9790f
   m_configObjects: {}
