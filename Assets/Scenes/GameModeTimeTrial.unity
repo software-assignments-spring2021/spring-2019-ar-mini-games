@@ -2459,7 +2459,6 @@ MonoBehaviour:
   dartCounter: 1000
   gameOverPanel: {fileID: 1641860920}
   timer: {fileID: 1973219775}
-  timeLimit: 40
 --- !u!1 &1052679867
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,7 +4238,7 @@ MonoBehaviour:
     m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
-    m_AlignByGeometry: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
