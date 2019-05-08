@@ -57,6 +57,7 @@ public class ThrowRealDart : MonoBehaviour
 
             transform.SetParent(DartBoard.transform);
             transform.localScale = new Vector3(80, 80, 80);
+            scene = SceneManager.GetActiveScene();
             if (scene.name == "GameModeModern")
             {
                 if (col.gameObject.name == "InnerBoard")
@@ -97,7 +98,8 @@ public class ThrowRealDart : MonoBehaviour
         // The new dart must be changed back to "Dart" tag from "InactiveDart" as assigned in PointsAssigner.cs
         dartCpy.gameObject.tag = "Dart";
         print(scene.name);
-        if (scene.name == "GameModeModern")
+        scene = SceneManager.GetActiveScene();
+        if (scene.name == "GameModeModern" || scene.name == "GameModeTimeTrial")
         {
             print("check");
             Destroy(this.gameObject);
