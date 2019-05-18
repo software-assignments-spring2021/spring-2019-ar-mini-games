@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BoardController : MonoBehaviour
 {
@@ -11,13 +12,14 @@ public class BoardController : MonoBehaviour
     public Text highScoreText;
     bool fired = false;
 
-
+    private int currentScene;
     public int Score { get => score; }
     public int HighScore { get => highScore; }
 
     // Start is called before the first frame update
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene().buildIndex;
         //score = 0;
         loadHighscore();
         showText();
@@ -44,13 +46,13 @@ public class BoardController : MonoBehaviour
 
     private void saveHighscore()
     {
-        PlayerPrefs.SetInt("highscore", highScore);
+        PlayerPrefs.SetInt("highscore"+currentScene, highScore);
     }
 
     //initialize the high score
     private void loadHighscore()
     {
-        highScore = PlayerPrefs.GetInt("highscore");
+        highScore = PlayerPrefs.GetInt("highscore"+currentScene);
     }
 }
 
