@@ -1,5 +1,5 @@
 # AR Mini Games
-_AR Mini Games_ (working title) is a project for mini games in Augmented Reality. Using the Unity engine in combination with ARCore and ARKit functionality we can bring these experiences to our users. Current games planned for production are AR Darts and AR Basketball.
+_AR Mini Games_ (working title) is a project for mini games in Augmented Reality. Using the Unity engine in combination with ARCore and ARKit functionality we can bring these experiences to our users. Current game planned for production is AR Darts.
 
 ## Requirements
 Minimum operating system requirements and UML diagrams are available [here](https://github.com/nyu-software-engineering/ar-mini-games/blob/master/REQUIREMENTS.md).
