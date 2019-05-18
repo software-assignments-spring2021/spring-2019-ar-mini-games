@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class TimeTrialManager : DartCounter
 {
     public Text timer;
-    float timeLimit = 30.0f;
-    float timeLeft = 30.0f;
+    float timeLimit = 40.0f;
+    float timeLeft = 40.0f;
     private void Start()
     {
-        timeLimit = 30.0f;
-        timeLeft = 30.0f;
+        timeLimit = 40.0f;
+        timeLeft = 40.0f;
     }
 
 
