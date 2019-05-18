@@ -13,6 +13,13 @@ We plan to have app store releases once we reach a stable build. In the meantime
 https://github.com/nyu-software-engineering/ar-mini-games.git
 ```
 ## Building and Testing The Project
+
+### Building onto iPhone from XCode Build W/O Using Unity  
+1. Download iphone build for xcode here: https://www.dropbox.com/s/kj1ceviod5cnufi/DartsARBuild1.zip?dl=0
+2. Unzip from the downloaded file: "DartsARBuild1". In the unzipped folder, open the following file in XCode: "Unity-iPhone.xcodeproj".
+3. Connect iPhone to Mac
+4. Afer opening, in XCode click the root folder: "Unity-iPhone". In the top left corner of XCode change "Generic  iOS Device" click and change the  device  to your connected iPhone
+
 ### Building and running in Unity Editor
 1. Download Unity 2018.3.6f1 (later versions should be compatible, but this is our development Unity build) 
 2. Open the ar-mini-games project in Unity by navigating to the "Assets/Scenes" folder from root directory.
@@ -21,12 +28,13 @@ https://github.com/nyu-software-engineering/ar-mini-games.git
 5. Press the "Play" Button to launch the game. And The "Pause" Button to Stop
 Note: Required to go to main menu scene every new test
 
-### Building onto a iOS or Android Device
+### Building onto a iOS or Android Device From Unity 
 1. In the Unity Editor go to File -> Build Settings
 2. Pick the desired platform and click "Switch Platform"
 3. Click "Build and Run", then run and follow additional instructions (e.g. build to phone in XCode)
 
 For iOS we also have a prebuilt XCode project [here](https://www.dropbox.com/s/kj1ceviod5cnufi/DartsARBuild1.zip?dl=0).
+
 
 ### Testing
 1. Navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
