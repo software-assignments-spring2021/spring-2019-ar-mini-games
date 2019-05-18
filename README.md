@@ -17,8 +17,9 @@ https://github.com/nyu-software-engineering/ar-mini-games.git
 1. Download Unity 2018.3.6f1 (later versions should be compatible, but this is our development Unity build) 
 2. Open the ar-mini-games project in Unity by navigating to the "Assets/Scenes" folder from root directory.
 3. Open "MainMenu.Unity"
-4. Press the "Play" Button to launch the game. And The "Pause" Button to Stop
-5. Note: Required to go to main menu scene every new test
+4. Go to File -> Build Settings and choose Android or iOS, then click "Switch Platform"
+5. Press the "Play" Button to launch the game. And The "Pause" Button to Stop
+Note: Required to go to main menu scene every new test
 
 ### Building onto a iOS or Android Device
 1. In the Unity Editor go to File -> Build Settings
