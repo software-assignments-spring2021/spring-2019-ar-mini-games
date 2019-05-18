@@ -117,7 +117,7 @@ public class ThrowRealDart : MonoBehaviour
         dartCountScript.dartCounter -= 1;
         Debug.Log("dart counter " + dartCountScript.dartCounter);
         dartCounterText.text = Convert.ToString(dartCountScript.dartCounter);
-        Invoke("isGameOver", 2);
+        Invoke("isGameOver", 1);
 
     }
 
