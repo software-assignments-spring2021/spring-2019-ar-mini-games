@@ -24,7 +24,7 @@ Note: Required to go to main menu scene every new test
 ### Building onto a iOS or Android Device
 1. In the Unity Editor go to File -> Build Settings
 2. Pick the desired platform and click "Switch Platform"
-3. Click "Build and Run", then run and follow additional instructions.
+3. Click "Build and Run", then run and follow additional instructions (e.g. build to phone in XCode)
 
 ### Testing
 1. Navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
