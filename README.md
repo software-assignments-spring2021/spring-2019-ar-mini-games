@@ -37,7 +37,7 @@ For iOS we also have a prebuilt XCode project [here](https://www.dropbox.com/s/k
 
 
 ### Testing
-1. Navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
+1. In Unity, navigate to the "Editor" folder, open "UnitTests.cs" to view code for unit tests 
 2. From navigation bar, under the "Window" tab select "General" > "Test Runner"
 3. "Test Runner" will open in a new pane. Select the "EditMode" tab, then click "Run All" to run tests  
 
