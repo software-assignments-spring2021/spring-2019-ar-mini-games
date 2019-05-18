@@ -535,14 +535,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: DartBoard
-      value: 
-      objectReference: {fileID: 2117294225}
-    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: dartCounterText
-      value: 
-      objectReference: {fileID: 1089396529}
     - target: {fileID: 1018342498, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
       propertyPath: m_Constraints
       value: 0
@@ -566,6 +558,14 @@ PrefabInstance:
       propertyPath: DartBoard
       value: 
       objectReference: {fileID: 2117294225}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &126753658
@@ -2086,7 +2086,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f66655b38428d40769e9e41ee237cbdc, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
@@ -3321,14 +3321,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: dartCounterText
-      value: 
-      objectReference: {fileID: 1089396529}
-    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
-      propertyPath: DartBoard
-      value: 
-      objectReference: {fileID: 2117294225}
     - target: {fileID: 1018342498, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
       propertyPath: m_Constraints
       value: 0
@@ -3352,6 +3344,14 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 7}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: dartCounterText
+      value: 
+      objectReference: {fileID: 1089396529}
+    - target: {fileID: 1334826080, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
+      propertyPath: DartBoard
+      value: 
+      objectReference: {fileID: 2117294225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91238cbd070704be284f16c89436bd6b, type: 3}
 --- !u!1 &1742071814 stripped
