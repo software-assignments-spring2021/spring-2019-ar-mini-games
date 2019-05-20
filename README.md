@@ -15,7 +15,7 @@ https://github.com/nyu-software-engineering/ar-mini-games.git
 ## Building and Testing The Project
 
 ## iOS Build 
-https://testflight.apple.com/join/QqSIY2N0
+Download the app directly to your iPhone from here: https://testflight.apple.com/join/QqSIY2N0
 
 ### Building onto iPhone from XCode Build W/O Using Unity  
 1. Download iphone build for xcode here: https://www.dropbox.com/s/kj1ceviod5cnufi/DartsARBuild1.zip?dl=0
