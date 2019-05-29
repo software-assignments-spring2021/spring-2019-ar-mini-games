@@ -57,4 +57,5 @@ Charles is a fourth-year Computer Science major at NYU. He's experienced in web,
 
 Tavius is a fourth-year at Gallatin with a self-designed major in Emerging Technologies. His primary interest is developing immersive, persistent, and artistic XR experiences.
 
-
+### Copyright
+This code is owned by the three developers of the project: Charles Dickstein, Antony Sunwoo, and Tavius Koktavy
