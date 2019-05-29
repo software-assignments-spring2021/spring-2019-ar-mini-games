@@ -57,5 +57,4 @@ Charles is a fourth-year Computer Science major at NYU. He's experienced in web,
 
 Tavius is a fourth-year at Gallatin with a self-designed major in Emerging Technologies. His primary interest is developing immersive, persistent, and artistic XR experiences.
 
-### License
-This project is liscensed under [GNU Public License v3.0](https://github.com/nyu-software-engineering/ar-mini-games/blob/master/LICENSE).
+
